@@ -114,12 +114,20 @@ h3 {
 }
 
 @media screen and (width < 769px) {
+	.horizontal-line {
+		width: 100%;
+	}
 	.wrapper {
 		padding: 10px;
 		margin-bottom: 20px;
 	}
 	.container {
-		display: flex;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+		padding: 10px;
+		width: 100%;
+		justify-content: center;
 	}
 	.item_2,
 	.item_3,

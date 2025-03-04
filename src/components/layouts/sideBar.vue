@@ -102,9 +102,6 @@ li {
 	margin-top: 30px;
 }
 
-.sideBar-item-three:last-child {
-	padding-bottom: 40px;
-}
 .sideBar-item-three > a {
 	font-weight: normal;
 	opacity: 0.7;

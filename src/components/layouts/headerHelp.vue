@@ -58,9 +58,9 @@ export default {
 	<div
 		class="currency-container flex bg-[#222222] justify-center items-center gap-10 text-white text-xl font-bold h-[50px]"
 	>
-		<div v-for="currency in formattedCurrencies" :key="currency.name" class="currency mr-2">
+		<div v-for="currency in formattedCurrencies" :key="currency.name" class="currency-mr-2">
 			{{ currency.name }}
-			<span class="value mr-2">{{ currency.value }}</span>
+			<span class="value-mr-2">{{ currency.value }}</span>
 			<span
 				:class="{ change: true, positive: currency.change >= 0, negative: currency.change < 0 }"
 			>
@@ -81,5 +81,23 @@ export default {
 
 .negative {
 	color: red;
+}
+
+@media (max-width: 768px) {
+	.currency-container {
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 100%;
+		height: 100%;
+		justify-content: space-around;
+		text-align: center;
+		gap: 0px;
+	}
+
+	.currency-mr-2 {
+		justify-content: center;
+		font-size: 16px;
+		margin: 0 auto;
+	}
 }
 </style>
