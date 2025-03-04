@@ -98,6 +98,9 @@ h3 {
 }
 
 @media screen and (width < 769px) {
+	.horizontal-line {
+		width: 100%;
+	}
 	.wrapper {
 		margin-bottom: 40px;
 		padding: 10px;

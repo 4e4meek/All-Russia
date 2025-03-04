@@ -1,15 +1,13 @@
 <script setup>
-import facebookIcon from '@/assets/facebook.png'
-import telegramIcon from '@/assets/telegram 1.png'
-import youtubeIcon from '@/assets/youtube-youtube 1.png'
-import livejournalIcon from '@/assets/livejournal-svgrepo-com 1.png'
+import facebookIconRU from '@/assets/facebookiconRU.svg'
+import facebookIconAR from '@/assets/facebookiconAR.svg'
+import telegramIcon from '@/assets/telegramicon.svg'
+import youtubeIcon from '@/assets/youtubeicon.svg'
+import livejournalIcon from '@/assets/livejournalicon.svg'
 </script>
 
 <template>
 	<ul class="social-icons">
-		<li class="icon-item">
-			<img :src="facebookIcon" alt="Facebook" />
-		</li>
 		<li class="icon-item">
 			<img :src="youtubeIcon" alt="YouTube" />
 		</li>
@@ -17,22 +15,34 @@ import livejournalIcon from '@/assets/livejournal-svgrepo-com 1.png'
 			<img :src="telegramIcon" alt="Telegram" />
 		</li>
 		<li class="icon-item">
+			<img :src="facebookIconRU" alt="Facebook" />
+		</li>
+		<li class="icon-item">
+			<img :src="facebookIconAR" alt="Facebook" />
+		</li>
+		<li class="icon-item">
 			<img :src="livejournalIcon" alt="LiveJournal" />
 		</li>
 	</ul>
+	<p class="toggle-text">*признана экстремистской организацией на территории РФ</p>
 </template>
 
 <style scoped>
+.toggle-text {
+	display: inline;
+	font-size: 11px;
+	position: relative;
+	top: -10px;
+	text-align: center;
+}
+
 .social-icons {
 	color: white;
 	display: flex;
-	gap: 20px;
-	padding: 10px 0;
+	flex-wrap: wrap;
 	justify-content: center;
 }
-
-.icon-item img {
-	width: 40px; /* Adjust size as needed */
-	height: 40px;
+.icon-item {
+	margin: 10px;
 }
 </style>

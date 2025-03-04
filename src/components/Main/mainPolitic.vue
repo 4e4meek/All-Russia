@@ -79,10 +79,21 @@ h3 {
 	margin-top: 16px;
 }
 
+
 @media screen and (width < 769px) {
-	.container {
-		display: flex;
+	.horizontal-line {
+		width: 100%;
+	}
+	.wrapper {
 		padding: 10px;
+		margin-bottom: 20px;
+	}
+	.container {
+		display: grid;
+		grid-template-columns: 200px 200px;
+		grid-template-rows: auto;
+		padding: 10px;
+		width: 100%;
 	}
 	.item:not(:first-child) {
 		display: none;

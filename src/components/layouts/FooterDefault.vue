@@ -1,12 +1,16 @@
+<script setup>
+import UILogosList from '@/components/Ui/UILogosList.vue'
+</script>
 <template>
 	<footer class="footer">
 		<div class="footer__wrapper wrapper">
 			<h2 class="footer__logo logo">ALLRUSSIA</h2>
 			<div class="footer__list list">
 				<div class="list__contact contact line-top">
-					<p class="contact__text line-bottom">Связаться с нами</p>
+					<p class="contact__text text">Связаться с нами</p>
+					<p class="contact__text line-bottom"></p>
 					<p class="contact__text margin-top">allrussia.info@allrussia.info</p>
-					<p class="contact__text m0">info@allrussia.info</p>
+					<p class="contact__text margin-top">info@allrussia.info</p>
 				</div>
 				<div class="list__social social line-top">
 					<p class="social__text line-bottom">Социальные сети</p>
@@ -16,11 +20,13 @@
 					<a class="social__text social__text-margin" src="/">Facebook* AR</a>
 					<a class="social__text social__text-margin" src="/">Livejournal</a>
 				</div>
+				<div class="social-icons">
+					<UILogosList />
+				</div>
 			</div>
 			<div class="footer__bottom bottom line-top">
 				<p class="bottom__text">
-					Свидетельство о регистрации средства массовой информации Эл № ФС77-66038 от 20 июня 2016г
-				</p>
+					Свидетельство о регистрации средства массовой информации Эл № ФС77-66038 от 20 июня 2016г</p>
 				<p class="bottom__text">Все права защищены. Портал «Вся Россия»</p>
 			</div>
 		</div>
@@ -59,11 +65,13 @@ a {
 	margin-top: 8px;
 	margin-bottom: 2px;
 	opacity: 0.75;
+	margin-left: 10px;
 }
 
 .bottom__text:last-child {
 	margin: 0;
 	margin-bottom: 16px;
+	margin-left: 10px;
 }
 
 .logo {
@@ -97,16 +105,19 @@ a {
 	width: 100%;
 }
 
+.text {
+	margin-left: 10px;
+}
 .line-bottom {
 	border-bottom: 1px solid white;
 	width: 100%;
 	padding-bottom: 16px;
-}
 
-.m0 {
-	margin-top: 0;
 }
-
+.margin-top {
+	display: block;
+	margin-left: 10px;
+}
 .contact__text {
 	margin-bottom: 0;
 }
@@ -114,12 +125,51 @@ a {
 .footer__bottom {
 	margin-top: 9px;
 }
-
 .social__text-margin {
 	margin-left: 64px;
 }
 
 .social__text-margin:first-of-type {
 	margin: 0;
+}
+.social-icons{
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.logo {    
+		margin-left: 0px;
+		margin-bottom: 30px;    
+		text-align: center;
+	}
+	.line-bottom {
+		display: none;
+	}
+	.social-icons {
+		display: grid;
+	}
+	.footer__list {
+		display: grid;
+		grid-template-rows: 20px 30px 0px;
+		align-items: center;
+	}
+	.margin-top {
+		display: inline;
+		margin-left: 10px;
+	}
+	.list__contact.contact.line-top{
+		text-align:center;
+	}
+	.list__social.social.line-top{
+		display: none;
+	}
+	.line-top {
+		width: 100%;
+		display: inline;
+	}
+	.text {
+		display: none;
+	}
+
 }
 </style>

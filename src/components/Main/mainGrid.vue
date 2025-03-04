@@ -242,11 +242,22 @@ export default {
 .item_1-list {
 	padding: 0 30px 30px 40px;
 }
+
 @media screen and (width < 769px) {
+	.item.item_1 {
+		display:none;
+	}
+	.item.item_2 {
+		
+	}
+	.horizontal-line {
+		width: 100%;
+	}
 	.container {
+		width: 100%;
 		padding: 10px;
 		display: flex;
-		flex-direction: column;
+		grid-columns-template: auto;
 	}
 	.item_1-one {
 		display: none;

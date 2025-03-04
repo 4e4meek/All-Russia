@@ -101,4 +101,22 @@ h3 {
 h3 {
 	font-size: 24px;
 }
+
+@media (width < 768px) {
+	.container {
+		width:100%;
+		padding: 10px;
+		display: grid;
+		grid-rows-template: auto auto;
+	}
+	
+	.horizontal-line {
+		width: 100%;
+	}
+	.wrapper {
+		padding: 10px;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+}
 </style>
