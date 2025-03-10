@@ -9,7 +9,8 @@
 					<span class="top__line-red line-red"></span>
 					<p class="top__text text-headdind">ЦЕНТР СИБИРИ</p>
 					<div class="top__card card">
-						<img class="card__img__top border__img" src="@/assets/novosibirsk_flag.png" alt="Флаг города Новосибирск" />
+						<img class="card__img" src="../../assets/Novosibirsk.png" alt="" />
+
 						<div class="card__box">
 							<p class="card__headding">Новосибирск</p>
 							<p class="card__text">Население: 1 620 000 чел.</p>
@@ -22,8 +23,8 @@
 					<span class="bottom__line-red line-red"></span>
 					<p class="bottom__text text-headdind">Регионы</p>
 					<div class="container__card">
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/omsk_flag.png" alt="Флаг Омской области" />
+						<div class="item item_1">
+							<img src="../../assets/Omsk_Oblast.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Омская область</p>
                 <div>
@@ -33,8 +34,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/tomsk_flag.png" alt="Флаг Томской области" />
+						<div class="item item_2">
+							<img src="../../assets/Tomsk_Oblast.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Томская область</p>
                 <div>
@@ -44,8 +45,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/krasnoyarsk_flag.png" alt="Флаг Красноярского края" />
+						<div class="item item_3">
+							<img src="../../assets/Krasnoyarsk_Krai.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Красноярский край</p>
                 <div>
@@ -55,8 +56,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/altai_flag.png" alt="Флаг Алтайского края" />
+						<div class="item item_4">
+							<img src="../../assets/Altai_Krai.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Алтайский край</p>
                 <div>
@@ -66,8 +67,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/kemerovo_flag.png" alt="Флаг Кемеровской области" />
+						<div class="item item_5">
+							<img src="../../assets/Kemerovo_Oblast.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Кемеровская область</p>
                 <div>
@@ -77,8 +78,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/irkutsk_flag.png" alt="Флаг Иркутской области" />
+						<div class="item item_6">
+							<img src="../../assets/Irkutsk_Oblast.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Иркутская область</p>
                 <div>
@@ -88,8 +89,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/altai_republic_flag.png" alt="Флаг Республики Алтай" />
+						<div class="item item_7">
+							<img src="../../assets/Altai_Republic.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Республика Алтай</p>
                 <div>
@@ -99,8 +100,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/buryatia_flag.png" alt="Флаг Республики Бурятия" />
+						<div class="item item_8">
+							<img src="../../assets/Buryatia.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Республика Бурятия</p>
                 <div>
@@ -110,8 +111,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/hakassia_flag.png" alt="Флаг Республики Хакасия" />
+						<div class="item item_9">
+							<img src="../../assets/Khakassia.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Республика Хакасия</p>
                 <div>
@@ -121,8 +122,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/zabaykalsky_flag.png" alt="Флаг Забайкальского края" />
+						<div class="item item_10">
+							<img src="../../assets/Zabaykalsky_Krai.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Забайкальский край</p>
                 <div>

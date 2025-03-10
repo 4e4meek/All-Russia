@@ -9,7 +9,7 @@
 					<span class="top__line-red line-red"></span>
 					<p class="top__text text-headdind">ЦЕНТР ЮГА</p>
 					<div class="top__card card">
-						<img class="card__img__top border__img" src="@/assets/rostov_flag.png" alt="Флаг города Ростов-на-Дону" />
+						<img class="card__img" src="../../assets/Rostov_Oblast.png" alt="" />
 						<div class="card__box">
 							<p class="card__headding">Ростов-на-Дону</p>
                 <p class="card__text">Население: 1 125 000 чел.</p>
@@ -22,8 +22,8 @@
 					<span class="bottom__line-red line-red"></span>
 					<p class="bottom__text text-headdind">Регионы</p>
 					<div class="container__card">
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/astrakhan_flag.png" alt="Флаг Астраханской области" />
+						<div class="item item_1">
+							<img src="../../assets/Astrakhan_Oblast.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Астраханская область</p>
                 <div>
@@ -33,8 +33,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/volgograd_flag.png" alt="Флаг Волгоградской области" />
+						<div class="item item_2">
+							<img src="../../assets/Volgograd_Oblast.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Волгоградская область</p>
                 <div>
@@ -44,8 +44,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/krasnodar_flag.png" alt="Флаг Краснодарского края" />
+						<div class="item item_3">
+							<img src="../../assets/Krasnodar_Krai.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Краснодарский край</p>
                 <div>
@@ -55,8 +55,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/rostov_flag.png" alt="Флаг Ростовской области" />
+						<div class="item item_4">
+							<img src="../../assets/Rostov_Oblast.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Ростовская область</p>
                 <div>
@@ -66,8 +66,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/adigea_flag.png" alt="Флаг Республики Адыгея" />
+						<div class="item item_5">
+							<img src="../../assets/Adygea.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Республика Адыгея</p>
                 <div>
@@ -77,8 +77,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/kalmykia_flag.png" alt="Флаг Республики Калмыкия" />
+						<div class="item item_6">
+							<img src="../../assets/Kalmykia.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Республика Калмыкия</p>
                 <div>
@@ -88,8 +88,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/crimea_flag.png" alt="Флаг Республики Крым" />
+						<div class="item item_7">
+							<img src="../../assets/Crimea.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">Республика Крым</p>
                 <div>
@@ -99,8 +99,8 @@
                 </div>
 							</div>
 						</div>
-						<div class="item">
-							<img class="card__img border__img" src="@/assets/sevastopol_flag.png" alt="Флаг города Севастополь" />
+						<div class="item item_8">
+							<img src="../../assets/Sevastopol.png" alt="" />
 							<div class="item__card">
 								<p class="card__headding card__headding__item">г. Севастополь</p>
                 <div>

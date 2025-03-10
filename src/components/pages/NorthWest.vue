@@ -9,7 +9,7 @@
 					<span class="top__line-red line-red"></span>
 					<p class="top__text text-headdind">САНКТ-ПЕТЕРБУРГ</p>
 					<div class="top__card card">
-						<img class="card__img" src="../../assets/spb_flag.png" alt="" />
+						<img class="card__img" src="../../assets/Saint_Petersburg.png" alt="" />
 						<div class="card__box">
 							<p class="card__headding">Санкт-Петербург</p>
 							<p class="card__text text-population">Население: 5 384 342 человек</p>
