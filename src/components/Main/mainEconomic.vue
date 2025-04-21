@@ -53,11 +53,7 @@ export default {
 	justify-content: space-between;
 }
 
-.item_1 {
-	display: flex;
-	justify-content: space-between;
-}
-
+.item_1,
 .item_2 {
 	display: flex;
 	justify-content: space-between;
@@ -104,10 +100,14 @@ h3 {
 
 @media (width < 768px) {
 	.container {
-		width:100%;
-		padding: 10px;
 		display: grid;
-		grid-rows-template: auto auto;
+		grid-template-columns: 100vw 100vw 100vw 100vw;
+		padding: 10px;
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
+	}
+	.item {
+		scroll-snap-align: start;
 	}
 	
 	.horizontal-line {

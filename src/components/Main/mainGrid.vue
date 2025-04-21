@@ -2,12 +2,22 @@
 	<div class="container">
 		<!-- Блок главной статьи -->
 		<div class="item item_1">
+			<div class="item_1-header">
+						<div class="horizontal-line"></div>
+					<div class="red-rectangle"></div>
+					<h3 class="item-title">Важное</h3>
+				</div>
 			<div class="item_1-one">
+				<img
+					class="item_1-shadow"
+					src="../../assets/comunicacion%20politica%20(1)%201.png"
+					alt="123"
+				/>
 				<h3 class="item_1-title">
 					{{ main_article.title }}
 				</h3>
 				<p class="item_1-subtitle">
-					{{ main_article.subtitle }}
+					//{{ main_article.subtitle }}
 				</p>
 				<div class="vertical-line"></div>
 				<p class="item_1-text">Похожие новости</p>
@@ -30,11 +40,11 @@
 		<div class="item item_2">
 			<div class="horizontal-line"></div>
 			<div class="red-rectangle"></div>
-			<h3 class="item_2-title">Последние новости</h3>
+			<h3 class="item-title">Последние новости</h3>
 			<img
+				class="item_2-img"
 				src="../../assets/284320788be7027b8bea3f687155b7fb%201.png"
 				alt="asd"
-				style="width: 300px"
 			/>
 			<p class="item_2-subtitle">
 				{{ latest_news[0]?.subtitle || 'Загрузка...' }}
@@ -45,12 +55,12 @@
 
 			<!-- Отображение последних новостей -->
 			<div v-for="item in latest_news" :key="item.id" class="news-item">
-				<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+				<div class="max-width-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
 				<p class="item_2-list">{{ item.title }}</p>
 			</div>
 		</div>
 
-		<!-- Блок похожих статей -->
+		<!-- хожих статей -->
 		<div class="item item_3">
 			<div class="item-block">
 				<img :src="`../../assets/${1}.png`" alt="" class="mb-4" />
@@ -190,10 +200,6 @@ export default {
 	width: 100%;
 	background-color: black;
 }
-.item_2-title {
-	margin: 8px 0;
-	font-weight: normal;
-}
 .item_2-subtitle {
 	font-family: 'Roboto Condensed';
 	margin: 8px 0;
@@ -221,9 +227,9 @@ export default {
 	height: 8px;
 	background-color: #aa0000;
 }
-
-.item_1-title {
+.item-title {
 	margin: 0;
+	font-weight: normal;
 	width: 300px;
 	font-size: 20px;
 	padding: 0 10px 10px 10px;
@@ -243,28 +249,71 @@ export default {
 	padding: 0 30px 30px 40px;
 }
 
+.item_1-header{
+	display:none;
+}
+
+.item_1-shadow{
+	display:none;
+}
+
+.item_2-img {
+	max-width: 300px;
+}
+
 @media screen and (width < 769px) {
-	.item.item_1 {
-		display:none;
+	.item_1 {
+		display: grid;
+		grid-column: 4/4;
+		grid-row: 1/3;
+		position: relative;
 	}
-	.item.item_2 {
-		
+	.item_1-header{
+		display: block;
+	}
+	.item_2 {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.vertical-line {
+		display: none;
 	}
 	.horizontal-line {
 		width: 100%;
 	}
 	.container {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 		padding: 10px;
-		display: flex;
-		grid-columns-template: auto;
+		margin-top: 0px;
+		justify-content: center;
+		align-items: center;
 	}
-	.item_1-one {
+	.item_1-text {
 		display: none;
 	}
+	.item_1-list{
+		display: none;
+	}
+	.item_1-one {
+		display: flex;
+		flex-direction: column;
+	}
 	.item_1-img {
-		width: 300px;
-		height: 200px;
+		display:none;
+	}
+	.item_1-shadow{
+		display: flex;
+	}
+	.item-title {
+		padding: 0px;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+	.item_2-img {
+		max-width: 100%;
 	}
 	.item_3,
 	.item_4,

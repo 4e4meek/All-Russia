@@ -106,10 +106,14 @@ h3 {
 		padding: 10px;
 	}
 	.container {
-		display: flex;
+		display: grid;
+		grid-template-columns: 100vw 100vw 100vw;
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
 	}
-	.item:not(:first-child) {
-		display: none;
+
+	.item{
+		scroll-snap-align: start;
 	}
 }
 </style>
