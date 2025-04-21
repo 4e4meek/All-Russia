@@ -89,14 +89,15 @@ h3 {
 		margin-bottom: 20px;
 	}
 	.container {
-		display: grid;
-		grid-template-columns: 200px 200px;
-		grid-template-rows: auto;
 		padding: 10px;
 		width: 100%;
+		display: grid;
+		grid-template-columns: 100vw 100vw 100vw 100vw 100vw;
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
 	}
-	.item:not(:first-child) {
-		display: none;
+	.item {
+		scroll-snap-align: start;
 	}
 }
 </style>

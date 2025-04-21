@@ -122,13 +122,18 @@ h3 {
 		margin-bottom: 20px;
 	}
 	.container {
-		display: grid;
-		grid-template-columns: auto auto;
-		grid-template-rows: auto;
 		padding: 10px;
 		width: 100%;
-		justify-content: center;
+		display: grid;
+		grid-template-columns: 100vw 100vw 100vw 100vw;
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
 	}
+
+	.item {
+		scroll-snap-align: start;
+	}
+	
 	.item_2,
 	.item_3,
 	.item_4,
