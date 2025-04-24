@@ -28,24 +28,28 @@ export default {
 </script>
 
 <template>
-	<div class="wrapper" style="margin-bottom: 32px">
+	<div class="wrapper">
 		<div class="horizontal-line"></div>
 		<div class="red-rectangle"></div>
 		<h3>ЭКОНОМИКА</h3>
 
 		<div class="container">
 			<div v-for="item in items" :key="item.id" class="item">
+				<img :src="getImageUrl(item.url)" :alt="item.title" />
+				<img src="../../assets/about1.png" alt="item.title" class="article-image" />
 				<div class="asd">
 					<p class="item_1-txt">{{ item.title }}</p>
 					<p>{{ item.subtitle }}</p>
 				</div>
-				<img :src="getImageUrl(item.url)" :alt="item.title" />
 			</div>
 		</div>
 	</div>
 </template>
 
 <style scoped>
+.wrapper {
+	margin-bottom: 32px;
+}
 .container {
 	margin: 0 auto;
 	display: flex;
@@ -96,21 +100,47 @@ h3 {
 
 h3 {
 	font-size: 24px;
+	margin: 6px 0px 16px 0px;
 }
 
 @media (width < 768px) {
+	.wrapper {
+		margin-bottom: 20px;
+	}
 	.container {
-		display: grid;
-		grid-template-columns: 100vw 100vw 100vw 100vw;
 		padding: 10px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 100vw 100vw 100vw;
+		grid-template-rows: auto;
 		scroll-snap-type: x mandatory;
 		overflow-x: scroll;
 	}
+	.item_1-txt{
+		margin-bottom: 5px;
+		font-size: 18px;
+	}
+	p{
+		font-size: 18px;
+	}
 	.item {
+		display: none;
+	}
+	.item:nth-child(-n+3) {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		padding-left: 20px;
+		padding-right: 20px;
 		scroll-snap-align: start;
 	}
-	
-	.horizontal-line {
+
+	.asd,
+	.item_1-txt {
+		max-width: 100vw;
+	}
+	.horizontal-line,
+	{
 		width: 100%;
 	}
 	.wrapper {

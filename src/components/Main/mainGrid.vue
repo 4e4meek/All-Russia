@@ -276,6 +276,9 @@ export default {
 		display: flex;
 		flex-direction: column;
 	}
+	.item_2-subtitle {
+		font-size: 18px;
+	}
 	.vertical-line {
 		display: none;
 	}
@@ -283,13 +286,15 @@ export default {
 		width: 100%;
 	}
 	.container {
+		font-size: 18px;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		padding: 10px;
+		padding: 10px 20px 5px 20px;
 		margin-top: 0px;
-		justify-content: center;
-		align-items: center;
+	}
+	.item_1-subtitle{
+		font-size: 18px;
 	}
 	.item_1-text {
 		display: none;
@@ -300,16 +305,21 @@ export default {
 	.item_1-one {
 		display: flex;
 		flex-direction: column;
+		width: 100%;
 	}
 	.item_1-img {
-		display:none;
+		display: none;
 	}
-	.item_1-shadow{
+	.item_1-shadow {
 		display: flex;
+		width: 100%;
 	}
 	.item-title {
+		width: 100%;
 		padding: 0px;
-		font-size: 25px;
+		font-size: 24px;
+		margin-bottom: 16px;
+		margin-top: 6px;
 		text-transform: uppercase;
 	}
 	.item_2-img {

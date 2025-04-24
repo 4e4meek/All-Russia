@@ -172,27 +172,39 @@ h3 {
 		margin-bottom: 20px;
 		padding: 10px;
 	}
-	.container{
+	.container {
+		padding: 10px;
+		width: 100%;
 		display: grid;
 		grid-template-columns: 100vw 100vw 100vw 100vw;
+		grid-template-rows: auto;
 		scroll-snap-type: x mandatory;
 		overflow-x: scroll;
 	}
-	.item{
+
+	.item {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		padding-left: 20px;
+		padding-right: 20px;
 		scroll-snap-align: start;
 	}
+	
 	.theme__title {
 		font-size: 20px;
 	}
-	img {
-		width: 300px;
-		height: 200px;
-	}
 	h3 {
-		font-size: 20px;
+		font-size: 24px;
+		margin: 6px 0 16px;
 	}
 	p {
 		font-size: 16px;
+	}
+	.item_2-subtitle,
+	.item_2-list,
+	.img {
+		width: 100%;
 	}
 }
 </style>
