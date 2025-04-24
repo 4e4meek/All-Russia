@@ -3,10 +3,10 @@
 		<!-- Блок главной статьи -->
 		<div class="item item_1">
 			<div class="item_1-header">
-						<div class="horizontal-line"></div>
-					<div class="red-rectangle"></div>
-					<h3 class="item-title">Важное</h3>
-				</div>
+				<div class="horizontal-line"></div>
+				<div class="red-rectangle"></div>
+				<h3 class="item-title">Важное</h3>
+			</div>
 			<div class="item_1-one">
 				<img
 					class="item_1-shadow"
@@ -16,9 +16,7 @@
 				<h3 class="item_1-title">
 					{{ main_article.title }}
 				</h3>
-				<p class="item_1-subtitle">
-					//{{ main_article.subtitle }}
-				</p>
+				<p class="item_1-subtitle">//{{ main_article.subtitle }}</p>
 				<div class="vertical-line"></div>
 				<p class="item_1-text">Похожие новости</p>
 				<ul class="item_1-list">
@@ -46,9 +44,7 @@
 				src="../../assets/284320788be7027b8bea3f687155b7fb%201.png"
 				alt="asd"
 			/>
-			<p class="item_2-subtitle">
-				{{ latest_news[0]?.subtitle || 'Загрузка...' }}
-			</p>
+			<div v-html="html" class="scroll-text font-sizestyle"></div>
 			<p class="asd font-bold">
 				{{ latest_news[0] ? getTimeAgo(latest_news[0].updated) : 'Загрузка...' }}
 			</p>
@@ -93,7 +89,8 @@ export default {
 		return {
 			same_as_article: [],
 			main_article: {},
-			latest_news: []
+			latest_news: [],
+			html: ''
 		}
 	},
 	mounted() {
@@ -132,7 +129,7 @@ export default {
 					.flat()
 					.sort((a, b) => new Date(b.updated) - new Date(a.updated)) // Сортировка по дате
 					.slice(0, 4)
-
+				this.html = this.latest_news[0]?.subtitle || 'Загрузка...'
 				console.log('Latest news:', this.latest_news)
 			} catch (error) {
 				console.error('Error fetching latest news:', error)
@@ -249,16 +246,47 @@ export default {
 	padding: 0 30px 30px 40px;
 }
 
-.item_1-header{
-	display:none;
+.item_1-header {
+	display: none;
 }
 
-.item_1-shadow{
-	display:none;
+.item_1-shadow {
+	display: none;
 }
 
 .item_2-img {
 	max-width: 300px;
+}
+
+.scroll-text {
+	height: 200px; /* Фиксированная высота */
+	overflow-y: auto; /* Включаем вертикальный скролл */
+	margin-bottom: 12px; /* Отступ снизу */
+	padding-right: 8px; /* Чтобы текст не прилипал к скроллбару */
+
+	/* Стилизация скроллбара (опционально) */
+	scrollbar-width: thin;
+	scrollbar-color: #a6a49e transparent;
+}
+
+scroll-text p {
+	font-size: 100px;
+}
+
+.scroll-text::-webkit-scrollbar {
+	width: 4px;
+}
+
+.scroll-text::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+.scroll-text::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+.scroll-text::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
 
 @media screen and (width < 769px) {
@@ -268,7 +296,7 @@ export default {
 		grid-row: 1/3;
 		position: relative;
 	}
-	.item_1-header{
+	.item_1-header {
 		display: block;
 	}
 	.item_2 {
@@ -294,7 +322,7 @@ export default {
 	.item_1-text {
 		display: none;
 	}
-	.item_1-list{
+	.item_1-list {
 		display: none;
 	}
 	.item_1-one {
@@ -302,9 +330,9 @@ export default {
 		flex-direction: column;
 	}
 	.item_1-img {
-		display:none;
+		display: none;
 	}
-	.item_1-shadow{
+	.item_1-shadow {
 		display: flex;
 	}
 	.item-title {
