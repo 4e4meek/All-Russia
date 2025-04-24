@@ -118,19 +118,36 @@ h3 {
 		width: 100%;
 	}
 	.wrapper {
-		padding: 10px;
+		padding: 10px 20px 5px 20px;
 		margin-bottom: 20px;
 	}
 	.container {
 		padding: 10px;
 		width: 100%;
 		display: grid;
-		grid-template-columns: 100vw 100vw 100vw 100vw;
+		grid-template-columns: 100vw 100vw 100vw;
+		grid-template-rows: auto;
 		scroll-snap-type: x mandatory;
 		overflow-x: scroll;
 	}
-
+	.title {
+		font-size: 18px;
+	}
+	p {
+		font-size: 18px;
+	}
+	h3 {
+		margin: 6px 0 16px;
+	}
 	.item {
+		display: none;
+	}
+	.item:nth-child(-n+3) {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		padding-left: 20px;
+		padding-right: 20px;
 		scroll-snap-align: start;
 	}
 	
@@ -142,10 +159,10 @@ h3 {
 	}
 	.title {
 		margin-bottom: 5px;
-		font-size: 16px;
+		font-size: 18px;
 	}
-	p {
-		font-size: 16px;
+	.item > p {
+		font-size: 18px;
 	}
 }
 </style>

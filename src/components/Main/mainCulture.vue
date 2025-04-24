@@ -50,8 +50,8 @@ export default {
 				<div v-for="article in articles" :key="article.id" class="item">
 					<img :src="article.url" alt="Article image" />
 					<h3 class="title">{{ article.title }}</h3>
-					<p>{{ article.subtitle }}</p>
-					<p>{{ article.updated }}</p>
+					<p class="subtitle">{{ article.subtitle }}</p>
+					<p class="subtitle">{{ article.updated }}</p>
 
 				</div>
 			</div>
@@ -101,18 +101,40 @@ h3 {
 	.horizontal-line {
 		width: 100%;
 	}
-	.wrapper {
-		margin-bottom: 40px;
-		padding: 10px;
+	h3 {
+		margin: 6px 0 16px;
 	}
+	.wrapper {
+		padding: 10px 20px 5px 20px;
+		margin-bottom: 40px;
+	}
+	
 	.container {
+		padding: 10px;
+		width: 100%;
 		display: grid;
 		grid-template-columns: 100vw 100vw 100vw;
+		grid-template-rows: auto;
 		scroll-snap-type: x mandatory;
 		overflow-x: scroll;
 	}
-
-	.item{
+	.title {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.item > p {
+		font-size: 18px;
+		font-weight: normal;
+	}
+	.item {
+		display: none;
+	}
+	.item:nth-child(-n+3) {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		padding-left: 20px;
+		padding-right: 20px;
 		scroll-snap-align: start;
 	}
 }
