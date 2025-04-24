@@ -62,6 +62,19 @@ $screen-lg: 1024px;
 $screen-xl: 1280px;
 $screen-2xl: 1536px;
 
+/* Глобальные стили для контента v-html */
+.scroll-text,
+.scroll-text p,
+.scroll-text h4 {
+	font-size: 16px !important;
+	line-height: 1.4;
+}
+
+.scroll-text h4 {
+	font-weight: bold;
+	margin: 10px 0;
+}
+
 /* Медиа-запросы */
 @mixin media-max($size) {
 	@media (max-width: $size) {

@@ -94,4 +94,37 @@ input:checked + .slider:before {
 .toggle-text {
 	font-size: 16px;
 }
+
+@media (max-width: 768px) {
+	.mode {
+			display: grid;
+			grid-template-columns: 25px 20px;
+			position: fixed;
+			top: 17px;
+			gap: 0;
+			right: 60px;
+	}
+
+	.toggle-text {
+		display: none;
+		position: relative;
+		top: 10px;
+		font-size: 16px;
+	}
+
+	.slider {
+		width: 60%;
+		height: 250%;
+	}
+
+	.slider:before {
+		height: 35%;
+		width: 80%;
+		align-items: center;
+	}
+
+	input:checked + .slider:before {
+		transform: translateY(-20px);
+	}
+}
 </style>

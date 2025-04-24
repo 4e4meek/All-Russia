@@ -1,7 +1,7 @@
 <template>
 	<div class="main">
 		<div class="banner">
-			<h1 class="banner__headding">Центральный федеральный округ</h1>
+			<h1 class="banner__headding">Дальневосточный федеральный округ</h1>
 		</div>
 		<div class="list">
 			<div class="wrapper">

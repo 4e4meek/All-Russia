@@ -79,13 +79,25 @@ h3 {
 	margin-top: 16px;
 }
 
+
 @media screen and (width < 769px) {
-	.container {
-		display: flex;
-		padding: 10px;
+	.horizontal-line {
+		width: 100%;
 	}
-	.item:not(:first-child) {
-		display: none;
+	.wrapper {
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+	.container {
+		padding: 10px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 100vw 100vw 100vw 100vw 100vw;
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
+	}
+	.item {
+		scroll-snap-align: start;
 	}
 }
 </style>

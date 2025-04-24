@@ -114,13 +114,26 @@ h3 {
 }
 
 @media screen and (width < 769px) {
+	.horizontal-line {
+		width: 100%;
+	}
 	.wrapper {
 		padding: 10px;
 		margin-bottom: 20px;
 	}
 	.container {
-		display: flex;
+		padding: 10px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 100vw 100vw 100vw 100vw;
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
 	}
+
+	.item {
+		scroll-snap-align: start;
+	}
+	
 	.item_2,
 	.item_3,
 	.item_4,

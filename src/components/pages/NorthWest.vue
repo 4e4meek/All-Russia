@@ -9,7 +9,7 @@
 					<span class="top__line-red line-red"></span>
 					<p class="top__text text-headdind">САНКТ-ПЕТЕРБУРГ</p>
 					<div class="top__card card">
-						<img class="card__img" src="../../assets/spb_flag.png" alt="" />
+						<img class="card__img" src="../../assets/Saint_Petersburg.png" alt="Санкт-Петербург" />
 						<div class="card__box">
 							<p class="card__headding">Санкт-Петербург</p>
 							<p class="card__text text-population">Население: 5 384 342 человек</p>
@@ -20,10 +20,14 @@
 				</div>
 				<div class="list__bottom bottom">
 					<span class="bottom__line-red line-red"></span>
-					<p class="bottom__text text-headdind">Регионы</p>
+					<p class="bottom__text text-headdind">РЕГИОНЫ</p>
 					<div class="container__card">
 						<div class="item item_1">
-							<img src="../../assets/arkhangelsk_flag.png" alt="" />
+							<img
+								class="card__img"
+								src="../../assets/arkhangelsk_flag.png"
+								alt="Архангельская область"
+							/>
 							<div class="item__card">
 								<p class="card__headding">Архангельская область</p>
 								<p class="card__text text-population">Население: 1 116 091 чел.</p>
@@ -31,8 +35,13 @@
 								<p class="card__text text-time">Часовой пояс: MSK+1 (UTC+4)</p>
 							</div>
 						</div>
+
 						<div class="item item_2">
-							<img src="../../assets/kaliningrad_flag.png" alt="" />
+							<img
+								class="card__img"
+								src="../../assets/kaliningrad_flag.png"
+								alt="Калининградская область"
+							/>
 							<div class="item__card">
 								<p class="card__headding">Калининградская область</p>
 								<p class="card__text text-population">Население: 1 008 403 чел.</p>
@@ -40,8 +49,9 @@
 								<p class="card__text text-time">Часовой пояс: MSK-1 (UTC+2)</p>
 							</div>
 						</div>
+
 						<div class="item item_3">
-							<img src="../../assets/karelia_flag.png" alt="" />
+							<img class="card__img" src="../../assets/karelia_flag.png" alt="Республика Карелия" />
 							<div class="item__card">
 								<p class="card__headding">Республика Карелия</p>
 								<p class="card__text text-population">Население: 579 183 чел.</p>
@@ -49,8 +59,13 @@
 								<p class="card__text text-time">Часовой пояс: MSK (UTC+3)</p>
 							</div>
 						</div>
+
 						<div class="item item_4">
-							<img src="../../assets/murmansk_flag.png" alt="" />
+							<img
+								class="card__img"
+								src="../../assets/murmansk_flag.png"
+								alt="Мурманская область"
+							/>
 							<div class="item__card">
 								<p class="card__headding">Мурманская область</p>
 								<p class="card__text text-population">Население: 716 970 чел.</p>
@@ -58,8 +73,13 @@
 								<p class="card__text text-time">Часовой пояс: MSK (UTC+3)</p>
 							</div>
 						</div>
+
 						<div class="item item_5">
-							<img src="../../assets/novgorod_flag.png" alt="" />
+							<img
+								class="card__img"
+								src="../../assets/novgorod_flag.png"
+								alt="Новгородская область"
+							/>
 							<div class="item__card">
 								<p class="card__headding">Новгородская область</p>
 								<p class="card__text text-population">Население: 602 134 чел.</p>
@@ -67,8 +87,9 @@
 								<p class="card__text text-time">Часовой пояс: MSK (UTC+3)</p>
 							</div>
 						</div>
+
 						<div class="item item_6">
-							<img src="../../assets/pskov_flag.png" alt="" />
+							<img class="card__img" src="../../assets/pskov_flag.png" alt="Псковская область" />
 							<div class="item__card">
 								<p class="card__headding">Псковская область</p>
 								<p class="card__text text-population">Население: 625 572 чел.</p>
@@ -76,8 +97,13 @@
 								<p class="card__text text-time">Часовой пояс: MSK (UTC+3)</p>
 							</div>
 						</div>
+
 						<div class="item item_7">
-							<img src="../../assets/vologda_flag.png" alt="" />
+							<img
+								class="card__img"
+								src="../../assets/vologda_flag.png"
+								alt="Вологодская область"
+							/>
 							<div class="item__card">
 								<p class="card__headding">Вологодская область</p>
 								<p class="card__text text-population">Население: 1 154 987 чел.</p>
@@ -85,8 +111,13 @@
 								<p class="card__text text-time">Часовой пояс: MSK (UTC+3)</p>
 							</div>
 						</div>
+
 						<div class="item item_8">
-							<img src="../../assets/leningrad_flag.png" alt="" />
+							<img
+								class="card__img"
+								src="../../assets/leningrad_flag.png"
+								alt="Ленинградская область"
+							/>
 							<div class="item__card">
 								<p class="card__headding">Ленинградская область</p>
 								<p class="card__text text-population">Население: 1 921 319 чел.</p>
@@ -94,8 +125,9 @@
 								<p class="card__text text-time">Часовой пояс: MSK (UTC+3)</p>
 							</div>
 						</div>
+
 						<div class="item item_9">
-							<img src="../../assets/komi_flag.png" alt="" />
+							<img class="card__img" src="../../assets/komi_flag.png" alt="Республика Коми" />
 							<div class="item__card">
 								<p class="card__headding">Республика Коми</p>
 								<p class="card__text text-population">Население: 806 809 чел.</p>
@@ -103,8 +135,13 @@
 								<p class="card__text text-time">Часовой пояс: MSK+1 (UTC+4)</p>
 							</div>
 						</div>
+
 						<div class="item item_10">
-							<img src="../../assets/nw_flag.png" alt="" />
+							<img
+								class="card__img"
+								src="../../assets/nw_flag.png"
+								alt="Ненецкий автономный округ"
+							/>
 							<div class="item__card">
 								<p class="card__headding">Ненецкий автономный округ</p>
 								<p class="card__text text-population">Население: 43 997 чел.</p>
@@ -129,13 +166,13 @@ export default {
 .container__card {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(5, 225px);
 	grid-column-gap: 90px;
 	grid-row-gap: 60px;
 }
+
 .item {
 	display: flex;
-	justify-content: space-between;
+	gap: 25px;
 }
 
 .main {
@@ -152,7 +189,6 @@ p {
 	margin: 0 auto;
 }
 
-/* banner */
 .banner {
 	background-image: url('@/assets/shapka.png');
 	background-repeat: no-repeat;
@@ -169,7 +205,6 @@ p {
 	color: #ffffff;
 }
 
-/* list */
 .list {
 	margin-top: 10px;
 }
@@ -197,13 +232,6 @@ p {
 	margin-top: 80px;
 }
 
-.bottom__list-cards {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-/* card */
 .card {
 	display: flex;
 	margin-top: 32px;
@@ -216,6 +244,15 @@ p {
 	justify-content: space-between;
 }
 
+.card__img {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	width: 338px;
+	height: 226px;
+	object-fit: cover;
+}
+
 .card__headding {
 	margin-bottom: 57px;
 	font-size: 36px;
@@ -224,18 +261,16 @@ p {
 .card__text {
 	line-height: 2;
 	font-size: 20px;
+	white-space: nowrap;
 }
 
 .bottom {
 	margin-bottom: 80px;
 }
-/* //////////////////// */
-
-/* media request */
 
 @media screen and (width < 1400px) {
-	.bottom__list-cards {
-		justify-content: center;
+	.container__card {
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.top__card {
@@ -245,6 +280,16 @@ p {
 	.banner__headding {
 		font-size: 60px;
 	}
+
+	.item {
+		display: flex;
+		gap: 25px;
+		align-items: flex-start;
+	}
+
+	.card__headding {
+		margin-bottom: 0;
+	}
 }
 
 @media screen and (width < 1000px) {
@@ -253,7 +298,18 @@ p {
 	}
 }
 
+@media screen and (width < 1200px) {
+	.container__card {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
 @media screen and (width < 769px) {
+	.card__img {
+		width: 100%;
+		height: 200px;
+	}
+
 	.main {
 		padding: 10px;
 	}
@@ -263,14 +319,8 @@ p {
 		display: flex;
 		flex-direction: column;
 	}
-	.item {
-		flex-direction: column;
-	}
 	.card {
 		flex-direction: column;
-	}
-	.card__headding {
-		margin-bottom: 0;
 	}
 }
 </style>

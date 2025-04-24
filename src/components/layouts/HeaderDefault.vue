@@ -135,6 +135,7 @@ const handleLanguageChange = () => {
 	height: 70px;
 	position: fixed;
 	width: 100%;
+	z-index: 10;
 }
 
 .menu__container {
@@ -231,20 +232,21 @@ const handleLanguageChange = () => {
 	border-radius: 4px;
 	padding: 5px 10px;
 }
+
 @media (max-width: 768px) {
 	.header {
-		flex-direction: column;
-		height: auto;
+		height: 70px;
 		padding: 10px;
+		width: 100%;
 
 		.menu__container {
 			width: 100%;
-			flex-direction: column;
-			align-items: flex-start;
+			font-size: 16px;
 		}
 
 		.header__logo {
-			font-size: 18px;
+			font-size: 30px;
+			justify-content: center;
 		}
 
 		.vertical__line {
@@ -253,24 +255,30 @@ const handleLanguageChange = () => {
 
 		.menu-icon > span {
 			width: 30px;
-			border: 1.5px solid white;
+			border: 2px solid white;
 		}
 
 		.header__btn {
+			display: block;
+			position: fixed;
+			top: 25px;
+			left: 20px;
 			margin: 0;
 		}
 
 		.header__items {
-			font-size: 14px;
-			margin: 10px 0;
+			display: none;
 		}
 
 		.language-select {
 			gap: 5px;
+			display: flex;
+			position: fixed;
+			top: 19px;
+			right: 20px;
 
 			img {
-				width: 20px;
-				height: 20px;
+				display:none;
 			}
 
 			select {

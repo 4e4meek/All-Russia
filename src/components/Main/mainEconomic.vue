@@ -53,11 +53,7 @@ export default {
 	justify-content: space-between;
 }
 
-.item_1 {
-	display: flex;
-	justify-content: space-between;
-}
-
+.item_1,
 .item_2 {
 	display: flex;
 	justify-content: space-between;
@@ -100,5 +96,27 @@ h3 {
 
 h3 {
 	font-size: 24px;
+}
+
+@media (width < 768px) {
+	.container {
+		display: grid;
+		grid-template-columns: 100vw 100vw 100vw 100vw;
+		padding: 10px;
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
+	}
+	.item {
+		scroll-snap-align: start;
+	}
+	
+	.horizontal-line {
+		width: 100%;
+	}
+	.wrapper {
+		padding: 10px;
+		margin-bottom: 20px;
+		width: 100%;
+	}
 }
 </style>
