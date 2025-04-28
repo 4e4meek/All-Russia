@@ -43,18 +43,24 @@ export default {
 </template>
 
 <style scoped>
+.wrapper {
+	max-width: 1480px;
+	margin-bottom: 32px;
+	padding: 0 20px 0 20px;
+}
+
 .container {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 357px;
+	gap: 20px;
 }
 
 h3 {
-	font-size: 24px;
 	font-weight: normal;
-	margin-top: 16px;
-	margin-bottom: 24px;
+	font-size: 36px;
+	margin: 6px 0px 16px 5px;
 }
 
 .horizontal-line {
@@ -79,6 +85,10 @@ h3 {
 	margin-top: 16px;
 }
 
+.item:nth-child(1){
+	display:none;
+}
+
 
 @media screen and (width < 769px) {
 	.horizontal-line {
@@ -87,6 +97,7 @@ h3 {
 	.wrapper {
 		padding: 10px 20px 5px 20px;
 		margin-bottom: 20px;
+		width: 100%;
 	}
 	.container {
 		padding: 10px;
@@ -99,6 +110,11 @@ h3 {
 	}
 	h3 {
 		margin: 6px 0 16px;
+		font-family: "Roboto Condensed";
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 150%;
 	}
 	.item > p {
 		font-size: 18px;

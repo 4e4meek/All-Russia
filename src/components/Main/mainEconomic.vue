@@ -36,7 +36,6 @@ export default {
 		<div class="container">
 			<div v-for="item in items" :key="item.id" class="item">
 				<img :src="getImageUrl(item.url)" :alt="item.title" />
-				<img src="../../assets/about1.png" alt="item.title" class="article-image" />
 				<div class="asd">
 					<p class="item_1-txt">{{ item.title }}</p>
 					<p>{{ item.subtitle }}</p>
@@ -48,26 +47,39 @@ export default {
 
 <style scoped>
 .wrapper {
+	max-width: 1480px;
 	margin-bottom: 32px;
+	padding: 0 20px 0 20px;
 }
 .container {
 	margin: 0 auto;
 	display: flex;
+	gap: 20px;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.item_1,
-.item_2 {
-	display: flex;
-	justify-content: space-between;
+.item {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.item > img {
+	order: 2;
+}
+
+.item:nth-child(-n+2) {
+	display: none;
 }
 
 h3 {
 	font-weight: normal;
-	font-size: 20px;
-	margin-top: 16px;
-	margin-bottom: 24px;
+	font-size: 36px;
+	margin: 6px 0px 16px 5px;
+}
+
+p {
+	font-size: 16px;
 }
 
 .item_1-txt {
@@ -93,19 +105,11 @@ h3 {
 	margin-bottom: 10px;
 }
 
-.asd {
-	max-width: 223px;
-	padding-right: 20px;
-}
-
-h3 {
-	font-size: 24px;
-	margin: 6px 0px 16px 0px;
-}
-
 @media (width < 768px) {
 	.wrapper {
 		margin-bottom: 20px;
+		padding: 10px 20px 5px 20px;
+		width: 100%;
 	}
 	.container {
 		padding: 10px;
@@ -122,6 +126,14 @@ h3 {
 	}
 	p{
 		font-size: 18px;
+	}
+	h3 {
+		font-family: "Roboto Condensed";
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 150%;
+		margin-left: 0;
 	}
 	.item {
 		display: none;
@@ -141,11 +153,6 @@ h3 {
 	}
 	.horizontal-line,
 	{
-		width: 100%;
-	}
-	.wrapper {
-		padding: 10px;
-		margin-bottom: 20px;
 		width: 100%;
 	}
 }

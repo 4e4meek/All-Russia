@@ -51,7 +51,6 @@ export default {
 				<h3 class="title">{{ article.title }}</h3>
 				<p>{{ article.subtitle }}</p>
 				<p>{{ article.updated }}</p>
-
 			</div>
 		</div>
 	</div>
@@ -59,21 +58,27 @@ export default {
 
 <style scoped>
 .wrapper {
-	margin-bottom: 60px;
+		max-width: 1480px;
+		margin-bottom: 32px;
+		padding: 0 20px 0 20px;
 }
 
 .container {
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: repeat(2, 340px);
-	grid-row-gap: 32px;
-	grid-column-gap: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-flow: col wrap;
+	align-items: flex-start;
+	gap: 20px;
 }
 
-.item_1 {
-	grid-column: 1/3;
-	grid-row: 1/3;
+.item:first-child {
+	height: 645px;
+	max-width: 711px;
+}
+.item:nth-child(n+2) {
+	height: 322px;
+	max-width: 325px;
 }
 
 .item_1-img {
@@ -96,10 +101,9 @@ export default {
 }
 
 h3 {
-	margin-top: 16px;
-	margin-bottom: 32px;
-	font-size: 24px;
 	font-weight: normal;
+	font-size: 36px;
+	margin: 6px 0px 16px 5px;
 }
 
 .title {
@@ -108,9 +112,8 @@ h3 {
 	font-weight: bold;
 }
 
-.title:first-child {
-	margin-top: 16px;
-	margin-bottom: 20px;
+.item:nth-child(n+6) {
+	display: none;
 }
 
 @media screen and (width < 769px) {
@@ -138,6 +141,11 @@ h3 {
 	}
 	h3 {
 		margin: 6px 0 16px;
+		font-family: "Roboto Condensed";
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 150%;
 	}
 	.item {
 		display: none;

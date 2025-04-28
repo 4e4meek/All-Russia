@@ -23,7 +23,10 @@ export default {
 			<h3>ТЕМЫ</h3>
 			<div class="container">
 				<div class="item item_1">
-					<h2 class="theme__title">СПОРТ</h2>
+					<div class="title">
+						<h2 class="theme__title">СПОРТ</h2>
+						<img src="../../assets/arrow 2.svg" alt='arrow' />
+					</div>
 					<img src="../../assets/rapper.png" alt="Фотография статьи" />
 					<p class="item_2-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
@@ -42,7 +45,10 @@ export default {
 					</p>
 				</div>
 				<div class="item item_2">
-					<h2 class="theme__title">ТУРИЗМ</h2>
+					<div class="title">
+						<h2 class="theme__title">ТУРИЗМ</h2>
+						<img src="../../assets/arrow 2.svg" alt='arrow' />
+					</div>
 					<img src="../../assets/brige.png" alt="Фотография статьи" />
 					<p class="item_2-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
@@ -61,7 +67,10 @@ export default {
 					</p>
 				</div>
 				<div class="item item_3">
-					<h2 class="theme__title">ПАРТНЕРЫ</h2>
+					<div class="title">
+						<h2 class="theme__title">ПАРТНЕРЫ</h2>
+						<img src="../../assets/arrow 2.svg" alt='arrow' />
+					</div>
 					<img src="../../assets/islam.png" alt="Фотография статьи" />
 					<p class="item_2-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
@@ -80,7 +89,10 @@ export default {
 					</p>
 				</div>
 				<div class="item item_4">
-					<h2 class="theme__title">ПРОЕКТЫ</h2>
+					<div class="title">
+						<h2 class="theme__title">ПРОЕКТЫ</h2>
+						<img src="../../assets/arrow 2.svg" alt='arrow' />
+					</div>
 					<img src="../../assets/september11.png" alt="Фотография статьи" />
 					<p class="item_2-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
@@ -104,6 +116,11 @@ export default {
 </template>
 
 <style scoped>
+.wrapper {
+	max-width: 1480px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 .container {
 	margin: 0 auto;
 	display: grid;
@@ -127,11 +144,15 @@ export default {
 	font-size: 32px;
 	color: white;
 }
+.title{
+	display: flex;
+	flex-direction: row;
+	gap:20px;
+}
 
 h3 {
-	margin-top: 16px;
-	margin-bottom: 32px;
-	font-size: 40px;
+	margin: 16px 0 32px 5px;
+	font-size: 36px;
 	font-weight: bold;
 	color: white;
 }
@@ -168,9 +189,10 @@ h3 {
 }
 
 @media screen and (width < 769px) {
-	.wrapper {
+		.wrapper {
 		margin-bottom: 20px;
-		padding: 10px;
+		padding: 10px 20px 5px 20px;
+		width: 100%;
 	}
 	.container {
 		padding: 10px;
@@ -195,7 +217,11 @@ h3 {
 		font-size: 20px;
 	}
 	h3 {
+		font-family: "Roboto Condensed";
+		text-transform: uppercase;
 		font-size: 24px;
+		font-weight: 400;
+		line-height: 150%;
 		margin: 6px 0 16px;
 	}
 	p {

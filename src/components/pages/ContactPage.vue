@@ -72,9 +72,6 @@ p {
 	font-size: 20px;
 }
 
-.contact__text:last-child {
-	margin-bottom: 48px;
-}
 .horizontal-line {
 	height: 0.5px;
 	width: 1120px;

@@ -20,10 +20,8 @@ import UILogosList from '@/components/Ui/UILogosList.vue'
 					<a class="social__text social__text-margin" src="/">Facebook* AR</a>
 					<a class="social__text social__text-margin" src="/">Livejournal</a>
 				</div>
-				<div class="list__social bottom line-top">
-					<div class="social-icons">
-						<UILogosList />
-					</div>
+				<div class="social-icons">
+					<UILogosList />
 				</div>
 			</div>
 			<div class="footer__bottom bottom line-top">
@@ -43,8 +41,9 @@ export default {
 
 <style scoped>
 .wrapper {
-	max-width: 1440px;
+	max-width: 1480px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
 p {
@@ -53,7 +52,7 @@ p {
 
 a {
 	font-size: 14px;
-}
+}4
 
 .footer {
 	font-family: 'Roboto', sans-serif;
@@ -120,9 +119,6 @@ a {
 	display: block;
 	margin-left: 10px;
 }
-.contact__text {
-	margin-bottom: 0;
-}
 
 .footer__bottom {
 	margin-top: 9px;
@@ -134,8 +130,12 @@ a {
 .social__text-margin:first-of-type {
 	margin: 0;
 }
-.social-icons{
+.social-icons {
 	display: none;
+}
+
+.contact__text {
+	margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -171,10 +171,6 @@ a {
 		display: none;
 	}
 	.line-top {
-		width: 100%;
-		display: inline;
-	}
-	.line-top{
 		width: 100%;
 		display: inline;
 	}
