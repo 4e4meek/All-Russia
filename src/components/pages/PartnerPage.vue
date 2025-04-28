@@ -60,7 +60,19 @@ export default {
 
 .partners {
   width: 1120px;
+  border-top: 1px solid;
   margin-right: 32px;
+}
+
+.partners__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card__img {
+  max-width: 300px;
+  height: 200px;
 }
 
 .title__heading {
@@ -77,5 +89,6 @@ export default {
 
 .card__text {
   font-size: 24px;
+  max-width: 300px;
 }
 </style>
