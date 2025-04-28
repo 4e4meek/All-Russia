@@ -90,7 +90,6 @@ export default {
 	padding: 17px;
 }
 a {
-	color: black;
 	text-decoration: none;
 }
 .item_1 {
@@ -107,7 +106,7 @@ a {
 .horizontal-line {
 	height: 1px;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.24);
+	border-top: 1px solid;
 	margin: 0 auto;
 }
 .red-rectangle {

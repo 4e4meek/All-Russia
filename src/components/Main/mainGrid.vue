@@ -189,7 +189,7 @@ export default {
 .vertical-line {
 	height: 1px; /* Высота линии */
 	width: 140px; /* Ширина линии */
-	background-color: black; /* Цвет линии */
+	border-top: 1px solid;
 	opacity: 0.4;
 }
 .diviver {
