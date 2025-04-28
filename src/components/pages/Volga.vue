@@ -1,7 +1,7 @@
 <template>
 	<div class="main">
 		<div class="banner">
-			<h1 class="banner__heading">Приволжский федеральный округ</h1>
+			<h1 class="banner__headding">Приволжский федеральный округ</h1>
 		</div>
 		<div class="list">
 			<div class="wrapper">

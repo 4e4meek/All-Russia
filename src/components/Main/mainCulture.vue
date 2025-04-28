@@ -74,7 +74,7 @@ export default {
 .horizontal-line {
 	height: 1px;
 	width: 1440px;
-	background-color: #000;
+	border-top: 1px solid;
 	margin: 0 auto;
 }
 

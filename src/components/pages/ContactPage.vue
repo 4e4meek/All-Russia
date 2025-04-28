@@ -78,6 +78,6 @@ p {
 .horizontal-line {
 	height: 0.5px;
 	width: 1120px;
-	background-color: #000;
+	border-top: 1px solid;
 }
 </style>

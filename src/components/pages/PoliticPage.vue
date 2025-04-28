@@ -116,7 +116,7 @@ h3 {
 	height: 0.3px;
 	opacity: 0.4;
 	width: 100%;
-	background-color: #000;
+	border-top: 1px solid;
 	margin: 50px;
 }
 
