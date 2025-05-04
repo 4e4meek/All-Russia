@@ -1,82 +1,98 @@
 <template>
 	<div class="container">
 		<!-- Блок главной статьи -->
-		<div class="item item_1">
-			<div class="item_1-header">
-				<div class="horizontal-line"></div>
-				<div class="red-rectangle"></div>
-				<h3 class="item-title">Важное</h3>
-			</div>
-			<div class="item_1-one">
-				<img
-					class="item_1-shadow"
-					src="../../assets/comunicacion%20politica%20(1)%201.png"
-					alt="123"
+		<div class="main__news">
+
+			<div class="main__news-title">
+				<div class="main__news-header">
+					<div class="horizontal-line"></div>
+					<div class="red-rectangle"></div>
+					<h3>Важное</h3>
+				</div>
+
+ 				<img
+ 					src="../../assets/comunicacion%20politica%20(1)%201.png"
+ 					alt="IMAGE"
 				/>
-				<h3 class="item_1-title">
-					{{ main_article.title }}
-				</h3>
-				<p class="item_1-subtitle">//{{ main_article.subtitle }}</p>
-				<div class="vertical-line"></div>
-				<p class="item_1-text">Похожие новости</p>
-				<ul class="item_1-list">
-					<li v-for="article in same_as_article" :key="article.id">
-						{{ article.title }}
-					</li>
-				</ul>
+
+				<div class="main__news-article">
+					<h2>{{ main_article?.title || 'Загрузка...' }}</h2>
+					<p>{{ main_article?.subtitle || 'Загрузка...' }}</p>
+					<div class="vertical-line"></div>
+				</div>
 			</div>
-			<div class="item_1-two">
-				<img
-					class="item_1-img"
-					src="../../assets/comunicacion%20politica%20(1)%201.png"
-					alt="123"
-				/>
+
+			<div class="main__news-img">
+ 				<img
+ 					src="../../assets/comunicacion%20politica%20(1)%201.png"
+ 					alt="IMAGE"
+ 				/>
+ 			</div>
+ 			
+			<div class="main__news-similar">
+ 				<h2>Похожие новости</h2>
+ 				<ul>
+ 					<li v-for="article in same_as_article" :key="article.id">
+ 						<span class="dot"></span>
+ 						{{ article?.title || 'Загрузка...' }}
+ 					</li>
+ 				</ul>
 			</div>
 		</div>
 
 		<!-- Блок последних новостей -->
-		<div class="item item_2">
+		<div class="last__news">
 			<div class="horizontal-line"></div>
 			<div class="red-rectangle"></div>
-			<h3 class="item-title">Последние новости</h3>
-			<img
-				class="item_2-img"
-				src="../../assets/284320788be7027b8bea3f687155b7fb%201.png"
-				alt="asd"
-			/>
-			<div v-html="html" class="scroll-text font-sizestyle"></div>
-			<p class="asd font-bold">
+			<h3>Последние новости</h3>
+
+			<div class="last__news-img">
+				<img
+					src="../../assets/284320788be7027b8bea3f687155b7fb%201.png"
+					alt="asd"
+				/>
+			</div>
+
+			<h2 class="last__news-title">
+				{{ latest_news[0]?.title || 'Загрузка...' }}
+			</h2>
+			<p>
 				{{ latest_news[0] ? getTimeAgo(latest_news[0].updated) : 'Загрузка...' }}
 			</p>
 
 			<!-- Отображение последних новостей -->
 			<div v-for="item in latest_news" :key="item.id" class="news-item">
 				<div class="max-width-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
-				<p class="item_2-list">{{ item.title }}</p>
+				<p class="item_2-list">{{ item?.title || 'Загрузка...'  }}</p>
 			</div>
 		</div>
-
-		<!-- хожих статей -->
-		<div class="item item_3">
-			<div class="item-block">
-				<img :src="`../../assets/${1}.png`" alt="" class="mb-4" />
-				<p class="dsa">{{ same_as_article[0]?.subtitle || 'Загрузка...' }}</p>
+	
+		<!-- Отображение похожих статей -->
+		<div class="similar__news">
+			<div class="horizontal-line"></div>
+			
+			<div class="similar__news-article">
+			<div class="similar__news-item">
+				<div class="item-block">
+					<img :src="`../../assets/${1}.png`" alt="" class="mb-4" />
+					<p class="dsa">{{ same_as_article[0]?.subtitle || 'Загрузка...' }}</p>
+				</div>
+			</div>
+			<div class="similar__news-item">
+				<div class="item-block">
+					<img :src="`../../assets/${2}.png`" alt="" class="mb-4" />
+					<p class="dsa">{{ same_as_article[1]?.subtitle || 'Загрузка...' }}</p>
+				</div>
+			</div>
+			<div class="similar__news-item">
+				<div class="item-block">
+					<img :src="`../../assets/${3}.png`" alt="" class="mb-4" />
+					<p class="dsa">{{ same_as_article[2]?.subtitle || 'Загрузка...' }}</p>
+				</div>
+			</div>
 			</div>
 		</div>
-
-		<div class="item item_4">
-			<div class="item-block">
-				<img :src="`../../assets/${2}.png`" alt="" class="mb-4" />
-				<p class="dsa">{{ same_as_article[1]?.subtitle || 'Загрузка...' }}</p>
-			</div>
-		</div>
-
-		<div class="item item_5">
-			<div class="item-block">
-				<img :src="`../../assets/${3}.png`" alt="" class="mb-4" />
-				<p class="dsa">{{ same_as_article[2]?.subtitle || 'Загрузка...' }}</p>
-			</div>
-		</div>
+	
 	</div>
 </template>
 
@@ -160,203 +176,179 @@ export default {
 <style scoped>
 .container {
 	margin: 0 auto;
-	margin-top: 80px;
-	width: 1440px;
+	margin-top: 70px;
+	padding: 0 20px 0 20px;
+	max-width: 1480px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: repeat(2, 400px);
+	grid-template-columns: auto;
+	grid-template-rows: 500px 360px;
 	grid-row-gap: 32px;
 	grid-column-gap: 20px;
-}
-.item_1 {
-	display: flex;
-	justify-content: space-between;
-	grid-column: 1/4;
-}
-.item_2 {
-	max-width: 300px;
-	grid-column: 4/4;
-	grid-row: 1/3;
+	justify-content: center;
 }
 
-.horizontal-line {
-	height: 1px;
-	width: 100%;
-	background-color: #000;
-	margin: 0 auto;
-}
 
-.vertical-line {
-	height: 1px; /* Высота линии */
-	width: 140px; /* Ширина линии */
-	border-top: 1px solid;
-	opacity: 0.4;
-}
-.diviver {
-	height: 1px;
-	width: 100%;
-	background-color: black;
-}
-.item_2-subtitle {
-	font-family: 'Roboto Condensed';
-	margin: 8px 0;
+h3 {
+	font-family: "Roboto Condensed";
+	font-weight: 450;
 	font-size: 20px;
-	font-weight: bold;
+	margin: 5px 0 10px 0;
 }
-.item_2-list {
-	font-family: 'Roboto';
+h2 {
+	font-family: "Roboto Condensed";
+	font-size: 20px;
+	max-width: 345px;
+}
+p {
 	font-size: 16px;
-	font-weight: normal;
+	max-width: 345px;
 }
 
-.asd {
-	margin-top: 0;
-	margin-bottom: 12px;
-	color: #aa0000;
-	font-size: 12px;
-}
-.dsa {
-	font-weight: 600;
-	font-size: 18px;
-}
 .red-rectangle {
 	width: 88px;
 	height: 8px;
 	background-color: #aa0000;
 }
-.item-title {
-	margin: 0;
-	font-weight: normal;
-	width: 300px;
-	font-size: 20px;
-	padding: 0 10px 10px 10px;
+.horizontal-line {
+	height: 1px;
+	width: 100%;
+	background-color: #AAAAAA;;
+	margin: 0 auto;
 }
-.item_1-subtitle {
-	padding: 0 10px 10px 10px;
+.vertical-line {
+	height: 1px;
+	max-width: 140px;
+	background-color: #AAAAAA;
+	margin: 0 0 20px 0;
+}
+
+/* Блок главной статьи */
+.main__news {
+	grid-row: 1/2;
+	display: grid;
+	grid-template-columns: 2fr 3.9fr;
+	grid-template-rows: 180px auto;
+	grid-column-gap: 20px;
+	justify-content: center;
+}
+.main__news-title > img {
+	display: none;
+}
+
+.main__news-article > h3 {
+	display: none;
+}
+.main__news-article > p {
+	margin: 15px 0 30px 0;
+}
+.main__news-img {
+	justify-content: flex-end;
+}
+.{
+	display: none;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #AA0000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.main__news-similar > ul > li {
+	display: grid;
+	grid-template-columns: 20px auto;
 	font-size: 16px;
+	align-items: center;
+	margin: 15px 0 15px 15px;
+}
+/* Конец блока главной статьи */
+
+/* Блок последних новостей */
+.last__news {
+	display: flex;
+	flex-direction: column;
+	max-width: 345px;
+	grid-row: 1/3;
 }
 
-.item_1-text {
-	padding: 10px 10px 10px 10px;
-	font-size: 20px;
-	font-weight: 600;
+.last__news > p {
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 12px;
+	color: #aa0000;
+	font-size: 12px;
+}
+/* Конец блока последних новостей */
+
+/* Блок похожих новостей */
+.similar__news {
+	grid-row: 2/3;
+	display: flex;
+	flex-direction: column;
 }
 
-.item_1-list {
-	padding: 0 30px 30px 40px;
+.similar__news-article {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin: 20px 0 20px 0;
 }
+/* Конец блока похожих новостей */
 
-.item_1-header {
-	display: none;
-}
+@media (768px < width < 1200px) {
+	.main__news {
+	display: flex;
+	flex-direction: column;
+	}
 
-.item_1-shadow {
-	display: none;
-}
-
-.item_2-img {
-	max-width: 300px;
-}
-
-.scroll-text {
-	height: 200px; /* Фиксированная высота */
-	overflow-y: auto; /* Включаем вертикальный скролл */
-	margin-bottom: 12px; /* Отступ снизу */
-	padding-right: 8px; /* Чтобы текст не прилипал к скроллбару */
-
-	/* Стилизация скроллбара (опционально) */
-	scrollbar-width: thin;
-	scrollbar-color: #a6a49e transparent;
-}
-
-scroll-text p {
-	font-size: 100px;
-}
-
-.scroll-text::-webkit-scrollbar {
-	width: 4px;
-}
-
-.scroll-text::-webkit-scrollbar-track {
-	background: #f1f1f1;
-}
-
-.scroll-text::-webkit-scrollbar-thumb {
-	background: #888;
-}
-
-.scroll-text::-webkit-scrollbar-thumb:hover {
-	background: #555;
+	.main__news-img {
+		display: none;
+	}
 }
 
 @media screen and (width < 769px) {
-	.item_1 {
-		display: grid;
-		grid-column: 4/4;
-		grid-row: 1/3;
-		position: relative;
+	.container {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
 	}
-	.item_1-header {
+	h3 {
+		font-family: "Roboto Condensed";
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 150%;
+	}
+	h2 {
+		max-width: 100%;
+	}
+	p {
+		max-width: 100%;
+	}
+
+
+	.main__news {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr;
+	}
+	.main__news-title > img {
 		display: block;
 	}
-	.item_2 {
-		max-width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-	.item_2-subtitle {
-		font-size: 18px;
-	}
-	.vertical-line {
+	.main__news-img {
 		display: none;
 	}
-	.horizontal-line {
-		width: 100%;
-	}
-	.container {
-		font-size: 18px;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		padding: 10px 20px 5px 20px;
-		margin-top: 0px;
-	}
-	.item_1-subtitle{
-		font-size: 18px;
-	}
-	.item_1-text {
-		display: none;
-	}
-	.item_1-list {
-		display: none;
-	}
-	.item_1-one {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
-	.item_1-img {
-		display: none;
-	}
-	.item_1-shadow {
-		display: flex;
-		width: 100%;
-	}
-	.item-title {
-		width: 100%;
-		padding: 0px;
-		font-size: 24px;
-		margin-bottom: 16px;
-		margin-top: 6px;
-		text-transform: uppercase;
-	}
-	.item_2-img {
+
+	.last__news {
 		max-width: 100%;
 	}
-	.item_3,
-	.item_4,
-	.item_5 {
+
+	.main__news-similar,
+	.vertical-line,
+	.similar__news {
 		display: none;
 	}
+
 }
 </style>

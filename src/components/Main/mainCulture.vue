@@ -61,7 +61,9 @@ export default {
 
 <style scoped>
 .wrapper {
+	max-width: 1480px;
 	margin-bottom: 90px;
+	padding: 0 20px 0 20px;
 }
 
 .container {
@@ -86,7 +88,8 @@ export default {
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 36px;
+	margin: 6px 0 16px 5px;     
 	font-weight: normal;
 }
 
@@ -117,6 +120,13 @@ h3 {
 		grid-template-rows: auto;
 		scroll-snap-type: x mandatory;
 		overflow-x: scroll;
+	}
+	h3 {
+		font-family: "Roboto Condensed";
+		text-transform: uppercase;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 150%;
 	}
 	.title {
 		font-size: 18px;
