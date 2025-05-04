@@ -1,7 +1,3 @@
-import CenterFO from '@/components/pages/RussionDistricts/CenterFO.vue'
-
-import FarEast from '@/components/pages/RussionDistricts/FarEast.vue'
-
 import PoliticPage from '@/components/pages/PoliticPage.vue'
 import ProjectPage from '@/components/pages/ProjectPage.vue'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -19,9 +15,14 @@ import NorthWest from './components/pages/RussionDistricts/NorthWest.vue'
 import SiberianFederalDistrict from './components/pages/RussionDistricts/Siberis.vue'
 import SouthernFederalDistrict from './components/pages/RussionDistricts/South.vue'
 import UralFederalDistrict from './components/pages/RussionDistricts/Ural.vue'
-import VolgaFederalDistrict from './components/pages/RussionDistricts/Privolj.vue'
 import MiddleEast from './components/pages/MiddleEast.vue'
 import NorthAfrica from './components/pages/NorthAfrica.vue'
+import PageTemplate from "@/components/pages/RussionDistricts/RussianDistrictPageTemplate.vue";
+
+// По хорошему можно перенести на бэк, зачем такую однотипную инфу хранить на фронте
+import farEastPageCardsProps from '@/mocks/farEastPageCardsProps.json';
+import volgaFederalDistrictCardsProps  from '@/mocks/volgaFederalDistrictCardsProps.json';
+import centerFOCardsProps  from '@/mocks/centerFOCardsProps.json';
 
 const router = createRouter({
 	history: createWebHistory(),
@@ -61,7 +62,12 @@ const router = createRouter({
 		{
 			path: '/CenterFO',
 			name: 'CenterPage',
-			component: CenterFO
+			component: PageTemplate,
+			props: {
+				bannerTitle: 'Центральный федеральный округ',
+				topHeading: 'СТОЛИЦА РОССИЙСКОЙ ФЕДЕРАЦИИ',
+				...centerFOCardsProps
+			}
 		},
 		{
 			path: '/project',
@@ -76,7 +82,12 @@ const router = createRouter({
 		{
 			path: '/Far-east',
 			name: 'FarEast',
-			component: FarEast
+			component: PageTemplate,
+			props: {
+				bannerTitle: 'Дальневосточный федеральный округ',
+				topHeading: 'Центр Дальнего Востока',
+				...farEastPageCardsProps
+			}
 		},
 		{
 			path: '/Caucasus',
@@ -106,7 +117,12 @@ const router = createRouter({
 		{
 			path: '/Volga',
 			name: 'VolgaFederalDistrict',
-			component: VolgaFederalDistrict
+			component: PageTemplate,
+			props: {
+				bannerTitle: 'Центр Приволжья',
+				topHeading: 'Приволжский федеральный округ',
+				...volgaFederalDistrictCardsProps
+			}
 		},
 		{
 			path: '/EastEurope',
@@ -117,11 +133,6 @@ const router = createRouter({
 			path: '/CentralAsia',
 			name: 'CentralAsia',
 			component: CentralAsia
-		},
-		{
-			path: '/Volga',
-			name: 'VolgaFederalDistrict',
-			component: VolgaFederalDistrict
 		},
 		{
 			path: '/MiddleEast',
