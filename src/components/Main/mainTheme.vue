@@ -161,7 +161,7 @@ h3 {
 	height: 0.3px;
 	opacity: 1;
 	width: 100%;
-	background-color: white;
+	border-top: 1px solid;
 	margin: 0 auto;
 }
 

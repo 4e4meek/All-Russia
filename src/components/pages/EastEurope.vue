@@ -1,15 +1,15 @@
 <template>
 	<div class="main">
 		<div class="banner">
-			<h1 class="banner__headding">Восточная Европа</h1>
+			<h1 class="banner__heading">Восточная Европа</h1>
 		</div>
 		<div class="list">
 			<div class="wrapper">
 				<div class="list__top top">
 					<span class="top__line-red line-red"></span>
-					<p class="top__text text-headdind">ЦЕНТР ВОСТОЧНОЙ ЕВРОПЫ</p>
+					<p class="top__text text-heading">ЦЕНТР ВОСТОЧНОЙ ЕВРОПЫ</p>
 					
-					<p class="bottom__text text-headdind">Страны</p>
+					<p class="bottom__text text-heading">Страны</p>
 					
 				</div>
 			</div>
@@ -74,7 +74,7 @@ export default {
 	align-items: center;
 }
 
-.banner__headding {
+.banner__heading {
 	font-size: 80px;
 	font-weight: bold;
 	color: #ffffff;
@@ -96,7 +96,7 @@ export default {
 	background-color: #aa0000;
 }
 
-.text-headdind {
+.text-heading {
 	margin-bottom: 30px;
 	margin-top: 24px;
 	font-size: 36px;
@@ -133,13 +133,13 @@ export default {
 	justify-content: space-between;
 }
 
-.card__headding {
+.card__heading {
 	margin-bottom: 87px;
 	font-size: 36px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-.card__headding__item {
+.card__heading__item {
 	margin-bottom: 20px;
 }
 
@@ -166,13 +166,13 @@ export default {
 		justify-content: center;
 	}
 
-	.banner__headding {
+	.banner__heading {
 		font-size: 60px;
 	}
 }
 
 @media screen and (width < 1000px) {
-	.banner__headding {
+	.banner__heading {
 		font-size: 45px;
 	}
 }
@@ -197,7 +197,7 @@ export default {
 		flex-direction: column;
 	}
 
-	.card__headding {
+	.card__heading {
 		margin-bottom: 0;
 	}
 }

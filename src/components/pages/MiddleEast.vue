@@ -1,13 +1,13 @@
 <template>
 	<div class="main">
 		<div class="banner">
-			<h1 class="banner__headding">Ближний Восток</h1>
+			<h1 class="banner__heading">Ближний Восток</h1>
 		</div>
 		<div class="list">
 			<div class="wrapper">
 				<div class="list__top top">
 					<span class="top__line-red line-red"></span>
-					<p class="top__text text-headdind">КРУПНЕЙШАЯ СТРАНА</p>
+					<p class="top__text text-heading">КРУПНЕЙШАЯ СТРАНА</p>
 					<div class="top__card card">
 						<img
 							class="card__img"
@@ -15,7 +15,7 @@
 							alt="Флаг Саудовской Аравии"
 						/>
 						<div class="card__box">
-							<p class="card__headding">Саудовская Аравия</p>
+							<p class="card__heading">Саудовская Аравия</p>
 							<p class="card__text text-population">Население: 36,9 млн. человек</p>
 							<p class="card__text text-square">Площадь: 2,15 млн.км²</p>
 							<p class="card__text text-time">Часовой пояс: UTC+3</p>
@@ -24,12 +24,12 @@
 				</div>
 				<div class="list__bottom bottom">
 					<span class="bottom__line-red line-red"></span>
-					<p class="bottom__text text-headdind">Страны</p>
+					<p class="bottom__text text-heading">Страны</p>
 					<div class="container__card">
 						<div class="item item_1">
 							<img class="card__img" src="@/assets/turkey_flag.png" alt="Флаг Турции" />
 							<div class="item__card">
-								<p class="card__headding">Турция</p>
+								<p class="card__heading">Турция</p>
 								<p class="card__text text-population">Население: 85,3 млн. чел.</p>
 								<p class="card__text text-square">Площадь: 783,5 тыс. кв. км</p>
 								<p class="card__text text-time">Часовой пояс: UTC+3</p>
@@ -38,7 +38,7 @@
 						<div class="item item_2">
 							<img class="card__img" src="@/assets/iran_flag.png" alt="Флаг Ирана" />
 							<div class="item__card">
-								<p class="card__headding">Иран</p>
+								<p class="card__heading">Иран</p>
 								<p class="card__text text-population">Население: 88,6 млн. чел.</p>
 								<p class="card__text text-square">Площадь: 1,65 млн. кв. км</p>
 								<p class="card__text text-time">Часовой пояс: UTC+3:30</p>
@@ -47,7 +47,7 @@
 						<div class="item item_3">
 							<img class="card__img" src="@/assets/israel_flag.png" alt="Флаг Израиля" />
 							<div class="item__card">
-								<p class="card__headding">Израиль</p>
+								<p class="card__heading">Израиль</p>
 								<p class="card__text text-population">Население: 9,4 млн. чел.</p>
 								<p class="card__text text-square">Площадь: 22,1 тыс. кв. км</p>
 								<p class="card__text text-time">Часовой пояс: UTC+2</p>
@@ -56,7 +56,7 @@
 						<div class="item item_4">
 							<img class="card__img" src="@/assets/uea_flag.png" alt="Флаг ОАЭ" />
 							<div class="item__card">
-								<p class="card__headding">ОАЭ</p>
+								<p class="card__heading">ОАЭ</p>
 								<p class="card__text text-population">Население: 9,9 млн. чел.</p>
 								<p class="card__text text-square">Площадь: 83,6 тыс. кв. км</p>
 								<p class="card__text text-time">Часовой пояс: UTC+4</p>
@@ -111,7 +111,7 @@ p {
 	align-items: center;
 }
 
-.banner__headding {
+.banner__heading {
 	font-size: 80px;
 	font-weight: bold;
 	color: #ffffff;
@@ -132,7 +132,7 @@ p {
 	background-color: #aa0000;
 }
 
-.text-headdind {
+.text-heading {
 	margin-bottom: 30px;
 	margin-top: 24px;
 	font-size: 24px;
@@ -165,7 +165,7 @@ p {
 	object-fit: cover;
 }
 
-.card__headding {
+.card__heading {
 	margin-bottom: 57px;
 	font-size: 36px;
 }
@@ -189,7 +189,7 @@ p {
 		justify-content: center;
 	}
 
-	.banner__headding {
+	.banner__heading {
 		font-size: 60px;
 	}
 
@@ -199,13 +199,13 @@ p {
 		align-items: flex-start; /* Выравнивание по верхнему краю */
 	}
 
-	.card__headding {
+	.card__heading {
 		margin-bottom: 0;
 	}
 }
 
 @media screen and (width < 1000px) {
-	.banner__headding {
+	.banner__heading {
 		font-size: 45px;
 	}
 }
