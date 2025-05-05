@@ -1,0 +1,68 @@
+{
+  "topCardProps": {
+    "flagFileName": "pyatigorsk_flag.png",
+    "flagDesc": "Флаг Пятигорска",
+    "timeZone": "MSK (UTC+3)",
+    "area": 97,
+    "population": 150000,
+    "heading": "Пятигорск"
+  },
+  "regionsCardsProps": [
+    {
+      "flagFileName": "dagestan.png",
+      "flagDesc": "Флаг Республики Дагестан",
+      "timeZone": "MSK (UTC+3)",
+      "area": 50000,
+      "population": 3232000,
+      "heading": "Республика Дагестан"
+    },
+    {
+      "flagFileName": "ingushetia_flag.png",
+      "flagDesc": "Флаг Республики Ингушетия",
+      "timeZone": "MSK (UTC+3)",
+      "area": 3600,
+      "population": 312000,
+      "heading": "Республика Ингушетия"
+    },
+    {
+      "flagFileName": "kabrdino.png",
+      "flagDesc": "Флаг Кабардино-Балкарской Республики",
+      "timeZone": "MSK (UTC+3)",
+      "area": 12500,
+      "population": 905000,
+      "heading": "Кабардино-Балкарская Республика"
+    },
+    {
+      "flagFileName": "karach.png",
+      "flagDesc": "Флаг Карачаево-Черкесской Республики",
+      "timeZone": "MSK (UTC+3)",
+      "area": 14000,
+      "population": 468000,
+      "heading": "Карачаево-Черкесская Республика"
+    },
+    {
+      "flagFileName": "osetia.png",
+      "flagDesc": "Флаг Республики Северная Осетия - Алания",
+      "timeZone": "MSK (UTC+3)",
+      "area": 8000,
+      "population": 679000,
+      "heading": "Республика Северная Осетия - Алания"
+    },
+    {
+      "flagFileName": "chechnya.png",
+      "flagDesc": "Флаг Чеченской Республики",
+      "timeZone": "MSK (UTC+3)",
+      "area": 16200,
+      "population": 1553000,
+      "heading": "Чеченская Республика"
+    },
+    {
+      "flagFileName": "stavropol.png",
+      "flagDesc": "Флаг Ставропольского края",
+      "timeZone": "MSK (UTC+3)",
+      "area": 66000,
+      "population": 2886000,
+      "heading": "Ставропольский край"
+    }
+  ]
+}

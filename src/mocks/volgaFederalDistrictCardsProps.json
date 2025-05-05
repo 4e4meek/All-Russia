@@ -3,8 +3,8 @@
     "flagFileName": "nizhny_novgorod_flag.png",
     "flagDesc": "Флаг Нижнего Новгорода",
     "timeZone": "MSK (UTC+3)",
-    "area": "410",
-    "population": "1250000",
+    "area": 410,
+    "population": 1250000,
     "heading": "Нижний Новгород"
   },
   "regionsCardsProps": [
@@ -12,104 +12,104 @@
       "flagFileName": "bachkorstan_flag.png",
       "flagDesc": "Флаг Башкортостана",
       "timeZone": "MSK+2 (UTC+5)",
-      "area": "142900",
-      "population": "4000000",
+      "area": 142900,
+      "population": 4000000,
       "heading": "Башкортостан"
     },
     {
       "flagFileName": "perms_flag.png",
       "flagDesc": "Флаг Пермского края",
       "timeZone": "MSK+2 (UTC+5)",
-      "area": "160200",
-      "population": "2500000",
+      "area": 160200,
+      "population": 2500000,
       "heading": "Пермский край"
     },
     {
       "flagFileName": "saratov_obl_flag.png",
       "flagDesc": "Флаг Саратовской области",
       "timeZone": "MSK+1 (UTC+4)",
-      "area": "53500",
-      "population": "3100000",
+      "area": 53500,
+      "population": 3100000,
       "heading": "Саратовская область"
     },
     {
       "flagFileName": "ulyanovsk_flag.png",
       "flagDesc": "Флаг Ульяновской области",
       "timeZone": "MSK (UTC+3)",
-      "area": "37400",
-      "population": "1290000",
+      "area": 37400,
+      "population": 1290000,
       "heading": "Ульяновская область"
     },
     {
       "flagFileName": "samara_flag.png",
       "flagDesc": "Флаг Самарской области",
       "timeZone": "MSK (UTC+3)",
-      "area": "3200000",
-      "population": "53500",
+      "area": 3200000,
+      "population": 53500,
       "heading": "Самарская область"
     },
     {
       "flagFileName": "kazan_flag.png",
       "flagDesc": "Флаг Татарстана",
       "timeZone": "MSK (UTC+3)",
-      "area": "68000",
-      "population": "3850000",
+      "area": 68000,
+      "population": 3850000,
       "heading": "Татарстан"
     },
     {
       "flagFileName": "penza_flag.png",
       "flagDesc": "Флаг Пензенской области",
       "timeZone": "MSK (UTC+3)",
-      "area": "43000",
-      "population": "1360000",
+      "area": 43000,
+      "population": 1360000,
       "heading": "Пензенская область"
     },
     {
       "flagFileName": "orenburg_flag.png",
       "flagDesc": "Флаг Оренбургской области",
       "timeZone": "MSK (UTC+3)",
-      "area": "124600",
-      "population": "2160000",
+      "area": 124600,
+      "population": 2160000,
       "heading": "Оренбургская область"
     },
     {
       "flagFileName": "mari_el_flag.png",
       "flagDesc": "Флаг Республики Марий Эл",
       "timeZone": "MSK (UTC+3)",
-      "area": "23000",
-      "population": "700000",
+      "area": 23000,
+      "population": 700000,
       "heading": "Республика Марий Эл"
     },
     {
       "flagFileName": "mordovia_flag.png",
       "flagDesc": "Флаг Республики Мордовия",
       "timeZone": "MSK (UTC+3)",
-      "area": "25500",
-      "population": "805000",
+      "area": 25500,
+      "population": 805000,
       "heading": "Республика Мордовия"
     },
     {
       "flagFileName": "udmurtia_flag.png",
       "flagDesc": "Флаг Удмуртской Республики",
       "timeZone": "MSK (UTC+3)",
-      "area": "42100",
-      "population": "1520000",
+      "area": 42100,
+      "population": 1520000,
       "heading": "Удмуртская Республика"
     },
     {
       "flagFileName": "kirov_flag.png",
       "flagDesc": "Флаг Кировской области",
       "timeZone": "MSK (UTC+3)",
-      "area": "120800",
-      "population": "1280000",
+      "area": 120800,
+      "population": 1280000,
       "heading": "Кировская область"
     },
     {
       "flagFileName": "cheboksary_flag.png",
       "flagDesc": "Флаг Чувашской Республики",
       "timeZone": "MSK (UTC+3)",
-      "area": "18300",
-      "population": "496000",
+      "area": 18300,
+      "population": 496000,
       "heading": "Чувашская Республика"
     }
   ]

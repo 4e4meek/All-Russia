@@ -8,21 +8,21 @@ import Contact from './components/pages/ContactPage.vue'
 import Home from './components/pages/HomePage.vue'
 import PartnerPage from './components/pages/PartnerPage.vue'
 
-import CaucasusFederalDistrict from './components/pages/RussionDistricts/Caucasus.vue'
 import CentralAsia from './components/pages/CentralAsia.vue'
 import EastEurope from './components/pages/EastEurope.vue'
-import NorthWest from './components/pages/RussionDistricts/NorthWest.vue'
-import SiberianFederalDistrict from './components/pages/RussionDistricts/Siberis.vue'
-import SouthernFederalDistrict from './components/pages/RussionDistricts/South.vue'
-import UralFederalDistrict from './components/pages/RussionDistricts/Ural.vue'
 import MiddleEast from './components/pages/MiddleEast.vue'
 import NorthAfrica from './components/pages/NorthAfrica.vue'
-import PageTemplate from "@/components/pages/RussionDistricts/RussianDistrictPageTemplate.vue";
+import PageTemplate from "@/components/pages/RussianDistrictPageTemplate.vue";
 
 // По хорошему можно перенести на бэк, зачем такую однотипную инфу хранить на фронте
 import farEastPageCardsProps from '@/mocks/farEastPageCardsProps.json';
 import volgaFederalDistrictCardsProps  from '@/mocks/volgaFederalDistrictCardsProps.json';
 import centerFOCardsProps  from '@/mocks/centerFOCardsProps.json';
+import northWestPageCardsProps  from '@/mocks/northWestPageCardsProps.json';
+import uralPageCardsProps  from '@/mocks/uralPageCardsProps.json';
+import siberiaPageCardsProps  from '@/mocks/siberiaPageCardsProps.json';
+import caucasusPageCardsProps  from '@/mocks/caucasusPageCardsProps.json';
+import southPageCardsProps  from '@/mocks/southPageCardsProps.json';
 
 const router = createRouter({
 	history: createWebHistory(),
@@ -65,7 +65,7 @@ const router = createRouter({
 			component: PageTemplate,
 			props: {
 				bannerTitle: 'Центральный федеральный округ',
-				topHeading: 'СТОЛИЦА РОССИЙСКОЙ ФЕДЕРАЦИИ',
+				topHeading: 'Столица Российской Федерации',
 				...centerFOCardsProps
 			}
 		},
@@ -92,27 +92,52 @@ const router = createRouter({
 		{
 			path: '/Caucasus',
 			name: 'CaucasusFederalDistrict',
-			component: CaucasusFederalDistrict
+			component: PageTemplate,
+			props: {
+				bannerTitle: 'Северо-Кавказский федеральный округ',
+				topHeading: 'Центр Северного Кавказа',
+				...caucasusPageCardsProps
+			}
 		},
 		{
 			path: '/NorthWest',
 			name: 'NorthWest',
-			component: NorthWest
+			component: PageTemplate,
+			props: {
+				bannerTitle: 'Северо-Западный федеральный округ',
+				topHeading: 'Центр Северо-Запада',
+				...northWestPageCardsProps
+			}
 		},
 		{
 			path: '/Siberia',
 			name: 'SiberianFederalDistrict',
-			component: SiberianFederalDistrict
+			component: PageTemplate,
+			props: {
+				bannerTitle: 'Сибирский федеральный округ',
+				topHeading: 'Центр Сибири',
+				...siberiaPageCardsProps
+			}
 		},
 		{
 			path: '/South',
 			name: 'SouthernFederalDistrict',
-			component: SouthernFederalDistrict
+			component: PageTemplate,
+			props: {
+				bannerTitle: 'Южный федеральный округ',
+				topHeading: 'Центр Юга',
+				...southPageCardsProps
+			}
 		},
 		{
 			path: '/Ural',
 			name: 'UralFederalDistrict',
-			component: UralFederalDistrict
+			component: PageTemplate,
+			props: {
+				bannerTitle: 'Уральский федеральный округ',
+				topHeading: 'Центр Урала',
+				...uralPageCardsProps
+			}
 		},
 		{
 			path: '/Volga',
