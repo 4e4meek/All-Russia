@@ -1,0 +1,84 @@
+{
+  "topCardProps": {
+    "flagFileName": "vladivostok_flag.png",
+    "flagDesc": "Флаг Владивостока",
+    "timeZone": "MSK+7 (UTC+10)",
+    "area": 331,
+    "population": 600000,
+    "heading": "Владивосток"
+  },
+  "regionsCardsProps": [
+    {
+      "flagFileName": "jewish_flag.png",
+      "flagDesc": "Флаг Еврейской автономной области",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 36200,
+      "population": 151000,
+      "heading": "Еврейская автономная область"
+    },
+    {
+      "flagFileName": "kamchatka_flag.png",
+      "flagDesc": "Флаг Камчатского края",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 464299,
+      "population": 308000,
+      "heading": "Камчатский край"
+    },
+    {
+      "flagFileName": "magadan_flag.png",
+      "flagDesc": "Флаг Магаданской области",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 462400,
+      "population": 141000,
+      "heading": "Магаданская область"
+    },
+    {
+      "flagFileName": "primorsky_flag.png",
+      "flagDesc": "Флаг Приморского края",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 161000,
+      "population": 1856000,
+      "heading": "Приморский край"
+    },
+    {
+      "flagFileName": "buryatia_flag.png",
+      "flagDesc": "Флаг Республики Бурятия",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 351000,
+      "population": 970000,
+      "heading": "Республика Бурятия"
+    },
+    {
+      "flagFileName": "sakha_flag.png",
+      "flagDesc": "Флаг Республики Саха (Якутия)",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 3084000,
+      "population": 949000,
+      "heading": "Республика Саха (Якутия)"
+    },
+    {
+      "flagFileName": "sakhalin_flag.png",
+      "flagDesc": "Флаг Сахалинской области",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 87000,
+      "population": 464000,
+      "heading": "Сахалинская область"
+    },
+    {
+      "flagFileName": "zabaykalsky_flag.png",
+      "flagDesc": "Флаг Забайкальского края",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 431000,
+      "population": 1060000,
+      "heading": "Забайкальский край"
+    },
+    {
+      "flagFileName": "khabarovsk_flag.png",
+      "flagDesc": "Флаг Хабаровского края",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 787000,
+      "population": 1295000,
+      "heading": "Хабаровский край"
+    }
+  ]
+}

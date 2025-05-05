@@ -1,0 +1,92 @@
+{
+  "topCardProps": {
+    "flagFileName": "novosibirsk_flag.png",
+    "flagDesc": "Флаг города Новосибирск",
+    "timeZone": "MSK+4 (UTC+7)",
+    "area": 502,
+    "population": 1620000,
+    "heading": "Новосибирск"
+  },
+  "regionsCardsProps": [
+    {
+      "flagFileName": "omsk_flag.png",
+      "flagDesc": "Флаг Омской области",
+      "timeZone": "MSK+3 (UTC+6)",
+      "area": 141000,
+      "population": 1935000,
+      "heading": "Омская область"
+    },
+    {
+      "flagFileName": "tomsk_flag.png",
+      "flagDesc": "Флаг Томской области",
+      "timeZone": "MSK+4 (UTC+7)",
+      "area": 316900,
+      "population": 1074000,
+      "heading": "Томская область"
+    },
+    {
+      "flagFileName": "krasnoyarsk_flag.png",
+      "flagDesc": "Флаг Красноярского края",
+      "timeZone": "MSK+4 (UTC+7)",
+      "area": 2366000,
+      "population": 2876000,
+      "heading": "Красноярский край"
+    },
+    {
+      "flagFileName": "altai_flag.png",
+      "flagDesc": "Флаг Алтайского края",
+      "timeZone": "MSK+3 (UTC+6)",
+      "area": 2317000,
+      "population": 168000,
+      "heading": "Алтайский край"
+    },
+    {
+      "flagFileName": "kemerovo_flag.png",
+      "flagDesc": "Флаг Кемеровской области",
+      "timeZone": "MSK+4 (UTC+7)",
+      "area": 2637000,
+      "population": 95500,
+      "heading": "Кемеровская область"
+    },
+    {
+      "flagFileName": "irkutsk_flag.png",
+      "flagDesc": "Флаг Иркутской области",
+      "timeZone": "MSK+5 (UTC+8)",
+      "area": 2361000,
+      "population": 774800,
+      "heading": "Иркутская область"
+    },
+    {
+      "flagFileName": "altai_republic_flag.png",
+      "flagDesc": "Флаг Республики Алтай",
+      "timeZone": "MSK+4 (UTC+7)",
+      "area": 92900,
+      "population": 219000,
+      "heading": "Республика Алтай"
+    },
+    {
+      "flagFileName": "buryatia_flag.png",
+      "flagDesc": "Флаг Республики Бурятия",
+      "timeZone": "MSK+5 (UTC+8)",
+      "area": 351300,
+      "population": 981000,
+      "heading": "Республика Бурятия"
+    },
+    {
+      "flagFileName": "hakassia_flag.png",
+      "flagDesc": "Флаг Республики Хакасия",
+      "timeZone": "MSK+4 (UTC+7)",
+      "area": 61600,
+      "population": 533000,
+      "heading": "Республика Хакасия"
+    },
+    {
+      "flagFileName": "zabaykalsky_flag.png",
+      "flagDesc": "Флаг Забайкальского края",
+      "timeZone": "MSK+6 (UTC+9)",
+      "area": 431900,
+      "population": 1093000,
+      "heading": "Забайкальский край"
+    }
+  ]
+}

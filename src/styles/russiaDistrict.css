@@ -1,13 +1,11 @@
 .container__card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 225px);
     grid-column-gap: 90px;
     grid-row-gap: 60px;
 }
 
 .item {
-    display: flex;
     width: 650px;
 }
 
@@ -89,7 +87,6 @@
 }
 
 
-/* card */
 .card {
     display: flex;
     margin-top: 32px;

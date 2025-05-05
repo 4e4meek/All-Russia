@@ -1,0 +1,76 @@
+{
+  "topCardProps": {
+    "flagFileName": "rostov_flag.png",
+    "flagDesc": "Флаг города Ростов-на-Дону",
+    "timeZone": "MSK (UTC+3)",
+    "area": 354,
+    "population": 1125000,
+    "heading": "Ростов-на-Дону"
+  },
+  "regionsCardsProps": [
+    {
+      "flagFileName": "astrakhan_flag.png",
+      "flagDesc": "Флаг Астраханской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 49000,
+      "population": 999000,
+      "heading": "Астраханская область"
+    },
+    {
+      "flagFileName": "volgograd_flag.png",
+      "flagDesc": "Флаг Волгоградской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 112900,
+      "population": 2473000,
+      "heading": "Волгоградская область"
+    },
+    {
+      "flagFileName": "krasnodar_flag.png",
+      "flagDesc": "Флаг Краснодарского края",
+      "timeZone": "MSK (UTC+3)",
+      "area": 75500,
+      "population": 5679000,
+      "heading": "Краснодарский край"
+    },
+    {
+      "flagFileName": "rostov_flag.png",
+      "flagDesc": "Флаг Ростовской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 100800,
+      "population": 4202000,
+      "heading": "Ростовская область"
+    },
+    {
+      "flagFileName": "adigea_flag.png",
+      "flagDesc": "Флаг Республики Адыгея",
+      "timeZone": "MSK (UTC+3)",
+      "area": 7800,
+      "population": 464000,
+      "heading": "Республика Адыгея"
+    },
+    {
+      "flagFileName": "kalmykia_flag.png",
+      "flagDesc": "Флаг Республики Калмыкия",
+      "timeZone": "MSK (UTC+3)",
+      "area": 74700,
+      "population": 270000,
+      "heading": "Республика Калмыкия"
+    },
+    {
+      "flagFileName": "crimea_flag.png",
+      "flagDesc": "Флаг Республики Крым",
+      "timeZone": "MSK (UTC+3)",
+      "area": 26900,
+      "population": 1911000,
+      "heading": "Республика Крым"
+    },
+    {
+      "flagFileName": "sevastopol_flag.png",
+      "flagDesc": "Флаг города Севастополь",
+      "timeZone": "MSK (UTC+3)",
+      "area": 864,
+      "population": 512000,
+      "heading": "г. Севастополь"
+    }
+  ]
+}

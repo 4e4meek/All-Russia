@@ -1,0 +1,60 @@
+{
+  "topCardProps": {
+    "flagFileName": "ekaterinburg_flag.png",
+    "flagDesc": "Флаг Екатеринбурга",
+    "timeZone": "YEKT (UTC+5)",
+    "area": 71500,
+    "population": 829000,
+    "heading": "Екатеринбург"
+  },
+  "regionsCardsProps": [
+    {
+      "flagFileName": "kurgan_flag.png",
+      "flagDesc": "Флаг Курганской области",
+      "timeZone": "YEKT (UTC+5)",
+      "area": 71500,
+      "population": 829000,
+      "heading": "Курганская область"
+    },
+    {
+      "flagFileName": "sverdlovsk_flag.png",
+      "flagDesc": "Флаг Свердловской области",
+      "timeZone": "YEKT (UTC+5)",
+      "area": 194300,
+      "population": 4316000,
+      "heading": "Свердловская область"
+    },
+    {
+      "flagFileName": "tyumen_flag.png",
+      "flagDesc": "Флаг Тюменской области",
+      "timeZone": "YEKT (UTC+5)",
+      "area": 1435000,
+      "population": 3753000,
+      "heading": "Тюменская область"
+    },
+    {
+      "flagFileName": "khanty_flag.png",
+      "flagDesc": "Флаг ХМАО",
+      "timeZone": "YEKT (UTC+5)",
+      "area": 534800,
+      "population": 1674000,
+      "heading": "Ханты-Мансийский АО"
+    },
+    {
+      "flagFileName": "yamalo_flag.png",
+      "flagDesc": "Флаг ЯНАО",
+      "timeZone": "YEKT (UTC+5)",
+      "area": 750300,
+      "population": 547000,
+      "heading": "Ямало-Ненецкий АО"
+    },
+    {
+      "flagFileName": "chelyabinsk_flag.png",
+      "flagDesc": "Флаг Челябинской области",
+      "timeZone": "YEKT (UTC+5)",
+      "area": 88500,
+      "population": 3485000,
+      "heading": "Челябинская область"
+    }
+  ]
+}
