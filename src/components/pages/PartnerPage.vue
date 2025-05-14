@@ -60,32 +60,35 @@ export default {
 
 .partners {
   width: 1120px;
-  border-top: 1px solid black;
+  border-top: 1px solid;
   margin-right: 32px;
 }
 
 .partners__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .card__img {
-  max-width: 180px;
-  max-height: 180px;
+  max-width: 300px;
+  height: 200px;
 }
 
 .title__heading {
   font-family: 'Roboto Condensed';
   font-size: 24px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .list__card {
   text-align: center;
+  align-content: center;
 }
 
 .card__text {
   font-size: 24px;
-  max-width: 280px;
+  max-width: 300px;
 }
 </style>

@@ -148,7 +148,7 @@ export default {
 	max-width: 800px;
 	align-items: center;
 	margin-bottom: 40px;
-	border-top: 1px solid #000000;
+	border-top: 1px solid;
 }
 .block-title {
 	margin-right: auto;

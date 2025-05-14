@@ -99,7 +99,7 @@ p {
 .horizontal-line {
 	height: 1px;
 	width: 100%;
-	background-color: #000;
+	border-top: 1px solid;
 	margin: 0 auto;
 }
 

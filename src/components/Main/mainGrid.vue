@@ -187,6 +187,7 @@ export default {
 	justify-content: center;
 }
 
+
 h3 {
 	font-family: "Roboto Condensed";
 	font-weight: 450;

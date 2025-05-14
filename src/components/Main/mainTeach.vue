@@ -100,7 +100,7 @@ export default {
 	height: 1px;
 	opacity: 0.4;
 	width: 100%;
-	background-color: #000;
+	border-top: 1px solid;
 	margin: 0 auto;
 }
 

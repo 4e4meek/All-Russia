@@ -79,10 +79,9 @@ h3 {
 }
 
 .horizontal-line {
-	height: 0.3px;
-	opacity: 0.4;
-	width: 100%;
-	background-color: #000;
+	height: 1px;
+	width: 1440px;
+	border-top: 1px solid;
 	margin: 0 auto;
 }
 
