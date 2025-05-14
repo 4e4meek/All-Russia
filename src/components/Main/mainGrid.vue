@@ -48,7 +48,7 @@
 
 			<div class="last__news-img">
 				<img
-					src="../../assets/284320788be7027b8bea3f687155b7fb%201.png"
+					src="../../assets/similar-news-img.jpg"
 					alt="asd"
 				/>
 			</div>
@@ -116,7 +116,7 @@ export default {
 	methods: {
 		async fetchMainArticle() {
 			try {
-				const response = await axios.get('https://allrussia.info/api/data_main_page')
+				const response = await axios.get('http://localhost:5000/api/data_main_page')
 				this.main_article = response.data.main_article[0]
 				this.same_as_article = response.data.same_as_main.slice(0, 3)
 				console.log('Same as article:', this.same_as_article)
@@ -136,7 +136,7 @@ export default {
 				]
 
 				const requests = categories.map((category) =>
-					axios.get(`https://allrussia.info/api/data_news_${category}`)
+					axios.get(`http://localhost:5000/api/data_news_${category}`)
 				)
 
 				const responses = await Promise.all(requests)
@@ -226,9 +226,8 @@ p {
 	grid-row: 1/2;
 	display: grid;
 	grid-template-columns: 2fr 3.9fr;
-	grid-template-rows: 180px auto;
+	grid-template-rows: 250px auto;
 	grid-column-gap: 20px;
-	justify-content: center;
 }
 .main__news-title > img {
 	display: none;
@@ -268,7 +267,7 @@ p {
 .last__news {
 	display: flex;
 	flex-direction: column;
-	max-width: 345px;
+	max-width: 1fr;
 	grid-row: 1/3;
 }
 
@@ -278,6 +277,9 @@ p {
 	margin-bottom: 12px;
 	color: #aa0000;
 	font-size: 12px;
+}
+.last__news-img > img {
+	max-width: 345px;
 }
 /* Конец блока последних новостей */
 
@@ -296,10 +298,16 @@ p {
 }
 /* Конец блока похожих новостей */
 
+@media (1200px < width < 1410px) {
+	.main__news-similar > ul > li:last-child {
+	display: none;
+	}
+}
+
 @media (768px < width < 1200px) {
 	.main__news {
-	display: flex;
-	flex-direction: column;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.main__news-img {
@@ -318,6 +326,7 @@ p {
 		text-transform: uppercase;
 		font-size: 22px;
 		font-weight: 400;
+		margin: 6px 0 16px;
 		line-height: 150%;
 	}
 	h2 {
@@ -340,6 +349,13 @@ p {
 	}
 
 	.last__news {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		max-width: 1fr;
+		height: auto;
+	}
+	.last__news-img > img {
 		max-width: 100%;
 	}
 

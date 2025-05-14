@@ -7,7 +7,7 @@ export default {
 	data() {
 		return {
 			newsItems: [],
-			apiUrlNews: 'https://allrussia.info/api/data_news_politics' // URL API для новостей политики
+			apiUrlNews: 'http://localhost:5000/api/data_news_politics' // URL API для новостей политики
 		}
 	},
 	mounted() {
@@ -85,7 +85,7 @@ h3 {
 	margin-top: 16px;
 }
 
-.item:nth-child(1){
+.item:nth-child(-n+1){
 	display:none;
 }
 
