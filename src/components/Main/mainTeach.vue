@@ -9,7 +9,7 @@ export default {
       articles: [], // Храним все статьи в одном массиве
       loading: true,
       error: null,
-      apiUrlNews: 'https://allrussia.info/api/data_news_science_education'
+      apiUrlNews: 'http://localhost:5000/api/data_news_science_education'
     }
   },
   async mounted() {
@@ -49,8 +49,7 @@ export default {
 			<div v-for="article in articles" :key="article.id" class="item">
 				<img :src="article.url" alt="Article image" />
 				<h3 class="title">{{ article.title }}</h3>
-				<p>{{ article.subtitle }}</p>
-				<p>{{ article.updated }}</p>
+				<p class="subtitle">{{ article.subtitle }}</p>
 			</div>
 		</div>
 	</div>
@@ -65,9 +64,8 @@ export default {
 
 .container {
 	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	flex-flow: col wrap;
+	display: grid;
+	grid-template-areas: "a b c" "a d e";
 	align-items: flex-start;
 	gap: 20px;
 }
@@ -75,10 +73,23 @@ export default {
 .item:first-child {
 	height: 645px;
 	max-width: 711px;
+	grid-area: a;
 }
 .item:nth-child(n+2) {
 	height: 322px;
 	max-width: 325px;
+}
+.item:nth-child(2) {
+	grid-area: b;
+}
+.item:nth-child(3) {
+	grid-area: c;
+}
+.item:nth-child(4) {
+	grid-area: d;
+}
+.item:nth-child(5) {
+	grid-area: e;
 }
 
 .item_1-img {
@@ -111,7 +122,9 @@ h3 {
 	font-size: 20px;
 	font-weight: bold;
 }
-
+.subtitle {
+	display: none;
+}
 .item:nth-child(n+6) {
 	display: none;
 }
@@ -130,6 +143,7 @@ h3 {
 		display: grid;
 		grid-template-columns: 100vw 100vw 100vw;
 		grid-template-rows: auto;
+		grid-template-areas: "a b c d e";
 		scroll-snap-type: x mandatory;
 		overflow-x: scroll;
 	}
@@ -142,10 +156,12 @@ h3 {
 	h3 {
 		margin: 6px 0 16px;
 		font-family: "Roboto Condensed";
-		text-transform: uppercase;
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 150%;
+	}
+	.subtitle {
+		display: flex;
 	}
 	.item {
 		display: none;
@@ -157,6 +173,7 @@ h3 {
 		padding-left: 20px;
 		padding-right: 20px;
 		scroll-snap-align: start;
+		max-width: 90%;
 	}
 	
 	.item_2,
