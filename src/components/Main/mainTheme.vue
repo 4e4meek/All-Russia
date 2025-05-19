@@ -31,15 +31,15 @@ export default {
 					<p class="item_2-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
@@ -53,15 +53,15 @@ export default {
 					<p class="item_2-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
@@ -75,15 +75,15 @@ export default {
 					<p class="item_2-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
@@ -97,15 +97,15 @@ export default {
 					<p class="item_2-subtitle">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
-					<div class="w-[345px] h-[0px] border border-[#aaaaaa] mb-2 mt-2"></div>
+					<div class="border"></div>
 					<p class="item_2-list">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 					</p>
@@ -125,8 +125,19 @@ export default {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 357px;
-	padding-bottom: 200px;
+	grid-template-rows: auto;
+	gap: 20px;
+	padding-bottom: 100px;
+	justify-content: center;
+}
+.item {
+	max-width: 340px;
+}
+.border {
+	max-width: 340px;
+	height: 0px;
+	color: #aaaaaa;
+	margin: 10px 0;
 }
 
 .themes__bg {
@@ -144,7 +155,7 @@ export default {
 	font-size: 32px;
 	color: white;
 }
-.title{
+.title {
 	display: flex;
 	flex-direction: row;
 	gap:20px;
@@ -181,15 +192,14 @@ h3 {
 	font-family: 'Roboto Condensed';
 	margin: 16px 0;
 	font-size: 20px;
-	font-weight: bold;
-	width: 345px;
+	font-weight: 700;
 }
 .item_2-list {
-	width: 345px;
+	font-size: 16px;
 }
 
 @media screen and (width < 769px) {
-		.wrapper {
+	.wrapper {
 		margin-bottom: 20px;
 		padding: 10px 20px 5px 20px;
 		width: 100%;
@@ -197,17 +207,17 @@ h3 {
 	.container {
 		padding: 10px;
 		width: 100%;
-		display: grid;
-		grid-template-columns: 100vw 100vw 100vw 100vw;
+		grid-template-columns: repeat(4, 100vw);
 		grid-template-rows: auto;
 		scroll-snap-type: x mandatory;
 		overflow-x: scroll;
+		gap: 0px;
+		justify-content: flex-start;
 	}
-
 	.item {
 		display: flex;
 		flex-direction: column;
-		width: 90%;
+		max-width: 90%;
 		padding-left: 20px;
 		padding-right: 20px;
 		scroll-snap-align: start;

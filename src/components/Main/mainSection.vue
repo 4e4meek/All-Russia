@@ -23,10 +23,10 @@ export default {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 685px;
-	background-image: url('@/assets/main.png');
-	background-size: cover;
-	background-position: center;
+	height: 360px;
+	background: linear-gradient( rgba(9, 19, 45, 0.5), rgba(9, 19, 45, 0.5) ), url('@/assets/hochupitsu.png');
+	background-size: 120%;
+	background-position: 50% 15%;
 }
 .main__text{
 	text-align: center;

@@ -52,7 +52,7 @@ p {
 
 a {
 	font-size: 14px;
-}4
+}
 
 .footer {
 	font-family: 'Roboto', sans-serif;
@@ -155,17 +155,17 @@ a {
 	}
 	.footer__list {
 		display: grid;
-		grid-template-rows: 10px 30px 0px;
+		grid-template-rows: 30px 30px 0px;
 		align-items: center;
 	}
 	.margin-top {
 		display: inline;
 		margin-left: 10px;
 	}
-	.list__contact.contact.line-top{
+	.list__contact{
 		text-align:center;
-		padding-bottom:20px;
-		padding-top:7px;
+		border-bottom: 1px solid white;
+		padding: 5px 0 5px;
 	}
 	.list__social.social.line-top{
 		display: none;

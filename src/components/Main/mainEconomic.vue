@@ -14,14 +14,19 @@ export default {
 	methods: {
 		async fetchEconomicData() {
 			try {
-				const response = await axios.get('https://allrussia.info/api/data_news_economics')
+				const response = await axios.get('http://localhost:5000/api/data_news_economics')
 				this.items = response.data
 			} catch (error) {
 				console.error('Ошибка при загрузке данных по экономике:', error)
 			}
 		},
 		getImageUrl(url) {
-			return url || 'default-image-path.jpg' // Укажите путь по умолчанию
+			try {
+				return url || 'default-image-path.jpg'
+			} catch (error) {
+				console.error("erm what the sigma:", error)
+			}
+			
 		}
 	}
 }
@@ -68,7 +73,7 @@ export default {
 	order: 2;
 }
 
-.item:nth-child(-n+2) {
+.item:not(:nth-last-child(-n+2)) {
 	display: none;
 }
 
