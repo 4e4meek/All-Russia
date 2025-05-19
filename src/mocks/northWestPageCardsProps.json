@@ -1,0 +1,92 @@
+{
+  "topCardProps": {
+    "flagFileName": "Saint_Petersburg.png",
+    "flagDesc": "Флаг Санкт-Петербурга",
+    "timeZone": "MSK (UTC+3)",
+    "area": 1400,
+    "population": 5384000,
+    "heading": "Санкт-Петербург"
+  },
+  "regionsCardsProps": [
+    {
+      "flagFileName": "arkhangelsk_flag.png",
+      "flagDesc": "Флаг Архангельской области",
+      "timeZone": "MSK+1 (UTC+4)",
+      "area": 589000,
+      "population": 1116000,
+      "heading": "Архангельская область"
+    },
+    {
+      "flagFileName": "kaliningrad_flag.png",
+      "flagDesc": "Флаг Калининградской области",
+      "timeZone": "MSK-1 (UTC+2)",
+      "area": 15100,
+      "population": 1008000,
+      "heading": "Калининградская область"
+    },
+    {
+      "flagFileName": "karelia_flag.png",
+      "flagDesc": "Флаг Республики Карелия",
+      "timeZone": "MSK (UTC+3)",
+      "area": 172400,
+      "population": 579000,
+      "heading": "Республика Карелия"
+    },
+    {
+      "flagFileName": "murmansk_flag.png",
+      "flagDesc": "Флаг Мурманской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 144900,
+      "population": 717000,
+      "heading": "Мурманская область"
+    },
+    {
+      "flagFileName": "novgorod_flag.png",
+      "flagDesc": "Флаг Новгородской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 54500,
+      "population": 602000,
+      "heading": "Новгородская область"
+    },
+    {
+      "flagFileName": "pskov_flag.png",
+      "flagDesc": "Флаг Псковской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 55300,
+      "population": 626000,
+      "heading": "Псковская область"
+    },
+    {
+      "flagFileName": "vologda_flag.png",
+      "flagDesc": "Флаг Вологодской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 145700,
+      "population": 1155000,
+      "heading": "Вологодская область"
+    },
+    {
+      "flagFileName": "leningrad_flag.png",
+      "flagDesc": "Флаг Ленинградской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 83900,
+      "population": 1921000,
+      "heading": "Ленинградская область"
+    },
+    {
+      "flagFileName": "komi_flag.png",
+      "flagDesc": "Флаг Республики Коми",
+      "timeZone": "MSK+1 (UTC+4)",
+      "area": 416800,
+      "population": 807000,
+      "heading": "Республика Коми"
+    },
+    {
+      "flagFileName": "nw_flag.png",
+      "flagDesc": "Флаг Ненецкого автономного округа",
+      "timeZone": "MSK+1 (UTC+4)",
+      "area": 176700,
+      "population": 44000,
+      "heading": "Ненецкий автономный округ"
+    }
+  ]
+}

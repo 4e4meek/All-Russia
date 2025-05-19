@@ -1,0 +1,92 @@
+{
+  "topCardProps": {
+    "flagFileName": "moscow_flag 1.png",
+    "flagDesc": "Флаг Москвы",
+    "timeZone": "MSK (UTC+3)",
+    "area": 2561,
+    "population": 12330126,
+    "heading": "Москва"
+  },
+  "regionsCardsProps": [
+    {
+      "flagFileName": "bachkorstan_flag.png",
+      "flagDesc": "Флаг Смоленской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 49800,
+      "population": 934900,
+      "heading": "Смоленская область"
+    },
+    {
+      "flagFileName": "tula_flag 1.png",
+      "flagDesc": "Флаг Тульской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 25700,
+      "population": 1449100,
+      "heading": "Тульская область"
+    },
+    {
+      "flagFileName": "tambov_flag 1.png",
+      "flagDesc": "Флаг Тамбовской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 34300,
+      "population": 994420,
+      "heading": "Тамбовская область"
+    },
+    {
+      "flagFileName": "lipetsk_flag 1.png",
+      "flagDesc": "Флаг Липецкой области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 24100,
+      "population": 1128192,
+      "heading": "Липецкая область"
+    },
+    {
+      "flagFileName": "voronezh_flag 1.png",
+      "flagDesc": "Флаг Воронежской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 52216,
+      "population": 2305608,
+      "heading": "Воронежская область"
+    },
+    {
+      "flagFileName": "belgorod_flag 1.png",
+      "flagDesc": "Флаг Белгородской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 27100,
+      "population": 1541259,
+      "heading": "Белгородская область"
+    },
+    {
+      "flagFileName": "smolensk_flag 1.png",
+      "flagDesc": "Флаг Брянской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 34900,
+      "population": 1182682,
+      "heading": "Брянская область"
+    },
+    {
+      "flagFileName": "vladimir_flag_337 1.png",
+      "flagDesc": "Флаг Владимирской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 29084,
+      "population": 1342099,
+      "heading": "Владимирская область"
+    },
+    {
+      "flagFileName": "ivanon_flag 1.png",
+      "flagDesc": "Флаг Ивановской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 21437,
+      "population": 987032,
+      "heading": "Ивановская область"
+    },
+    {
+      "flagFileName": "smolensk_flag 1.png",
+      "flagDesc": "Флаг Калужской области",
+      "timeZone": "MSK (UTC+3)",
+      "area": 29800,
+      "population": 1000980,
+      "heading": "Калужская область"
+    }
+  ]
+}
